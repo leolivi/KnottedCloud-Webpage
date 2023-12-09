@@ -1,0 +1,93 @@
+<!-- Pop up to integrate later with JS in Module 3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Pop Up</title>
+    <!-- links -->
+    <link rel="icon" type="image/svg+xml" href="assets/illustrations/icons/logo/KC-favicon.svg">
+    <link rel="icon" type="image/png" href="assets/illustrations/icons/logo/KC-favicon.png">
+    <link rel="stylesheet" href="assets/css/reset-variables.css">
+    <link rel="stylesheet" href="assets/css/typografie.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .cookies-container {
+            height: auto;
+            width: 35vw;
+            background-color: var(--KC-brown);
+            padding: 1rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .cookies-container > a {
+            font-family: var(--body-font);
+            font-size: clamp(0.5rem, 2vw, 1rem);
+            color: var(--KC-orange);
+        }
+        
+        .cookies-container > a:hover {
+            text-decoration: underline 2px;
+        }
+
+        .cookies-container > a:visited {
+            color: var(--KC-orange);
+        }
+
+        .cookie-buttons-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        .cookie-buttons-section > button {
+            font-family: var(--heading-font);
+            font-size: clamp(0.5rem, 3vw, 1.5rem);;
+            text-decoration: none;
+            color: var(--primary-background-color);
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                    align-items: center;
+            padding: 0.5rem 0;
+            background-color: var(--KC-orange);
+            border-radius: 35px;
+            width: 8rem;
+            margin: 2rem 0;
+            border: none;
+        }
+
+        .cookie-buttons-section > button:hover {
+            background-color: var(--KC-orangehover); 
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cookies-container">
+        <p>This website uses cookies</p>
+        <div class="cookie-buttons-section">
+            <button aria-label="Click here to accept our Cookie-Policy">Accept all</button>
+            <button aria-label="Click here to accept our Cookie-Policy">Settings</button>
+        </div>
+        <a href="#" aria-label="Click here to read about our Cookie-Policy">Read more</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63.021" height="51.155" viewBox="0 0 63.021 51.155">
+  <g id="Scroll_to_top_button" data-name="Scroll to top button" transform="translate(-1631.49 -1157.605)">
+    <g id="Brandmark_KC" data-name="Brandmark KC" transform="translate(1633 1159.115)" opacity="0.997">
+      <g id="Gruppe_208" data-name="Gruppe 208" transform="translate(0 0)">
+        <path id="Pfad_43" data-name="Pfad 43" d="M64.265,37.448A14.978,14.978,0,0,1,49.288,52.425H19.333a14.977,14.977,0,1,1,0-29.954c.064,0,.126,0,.191,0,.045,0,.089,0,.134,0a14.977,14.977,0,1,1,29.305,0c.045,0,.089,0,.134,0,.064,0,.126,0,.191,0A14.978,14.978,0,0,1,64.265,37.448Z" transform="translate(-4.265 -4.29)" fill="#fff" stroke="#eb6336" stroke-miterlimit="10" stroke-width="3.02" opacity="0.51"/>
+        <path id="Pfad_44" data-name="Pfad 44" d="M63.909,37.058A14.978,14.978,0,0,1,48.932,52.035H18.977a14.977,14.977,0,0,1,0-29.955c.064,0,.127,0,.191,0,.045,0,.089,0,.134,0a14.977,14.977,0,1,1,29.305,0c.045,0,.089,0,.134,0,.064,0,.127,0,.191,0A14.978,14.978,0,0,1,63.909,37.058Z" transform="translate(-4 -4)" fill="#fff" stroke="#eb6336" stroke-miterlimit="10" stroke-width="3.02"/>
+      </g>
+    </g>
+    <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M22.941,17.02,35.605,29.695a2.383,2.383,0,0,0,3.381,0,2.414,2.414,0,0,0,0-3.391l-14.35-14.36a2.389,2.389,0,0,0-3.3-.07L6.886,26.294a2.394,2.394,0,0,0,3.381,3.391Z" transform="translate(1640.066 1167.797)" fill="#eb6336"/>
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <!-- links -->
+    <link rel="icon" type="image/svg+xml" href="assets/illustrations/icons/logo/KC-favicon.svg">
+    <link rel="icon" type="image/png" href="assets/illustrations/icons/logo/KC-favicon.png">
+    <link rel="stylesheet" href="assets/css/reset-variables.css">
+    <link rel="stylesheet" href="assets/css/typografie.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header community">
+        <nav class="main-nav">
+            <a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark-no-background.svg" alt="Logo Icon to get to Homepage"></a>
+            <input type="checkbox" id="check" aria-hidden="true" aria-label="check this box to see menu">
+            <label for="check" class="check-bar">
+                <i class="fa-solid fa-bars fa-2x" id="menu-icon" ></i>
+                <i class="fa-solid fa-xmark fa-2x" id="close-icon"></i>
+            </label>
+            <ul class="main-nav-items">
+                <li><a href="index.html">home</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a class="active" href="#">community</a></li>
+                <li><a href="costumers.html">costumers</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <div class="community-landingpage">
+            <h2>Hello fellow crafters</h2>
+                <p class="teaser">Let's craft together!</p>
+                <i class="fa-solid fa-chevron-down fa-2x"></i>
+        </div>
+    </header>
+
+    <section class="community-section">
+        <h3>Community</h3>
+        <div class="community-grid">
+            <p>In our community, creativity knows no boundaries. We'd love to welcome you to our vibrant and inspiring
+                crafting community. It doesn't matter what craft you do, and whether you're an experienced artist or a
+                beginner looking to explore your creative side, our community provides a space for everyone to interact,
+                share ideas, and bring new projects to life. If you're in Basel and want to join, contact me anytime!
+            </p>
+            <div class="community-image">
+                <img src="assets/images/image-community.jpg" alt="three hands holding each other">
+            </div>
+        </div>
+        <div class="button-box">
+            <a href="contact.html">Join the community!</a>
+        </div>
+        <div class="community-values">
+            <h4>Community values</h4>
+            <div class="community-values-grid">
+                <p><span>Supportive environment</span><br><br>We know the ups and downs that come with crafting. We
+                    support and motivate each other, celebrate each other's successes, offer help, and share our ideas
+                    with each other. Your work deserves to be seen and celebrated!</p>
+                <p><span>Collaborations</span><br><br>Even more enjoyable than creating something of your own is
+                    creating it together! We bring our skills and ideas together to create something new - and most
+                    importantly, to have fun.</p>
+                <p><span>Diverse Crafting</span><br><br>We all have different crafting interests and strengths. From
+                    sewing and knitting to macrame and drawing, you'll find people who are passionate about different
+                    crafts. This diversity brings new perspectives and ideas and inspires new creations and
+                    collaborations.</p>
+                <p><span>Learning Opportunities</span><br><br>We believe in continuous growth and learning. Our
+                    community regularly meets in person, exchanges knowledge and offers workshops. Whether you want to
+                    improve your skills or learn something completely new, we have a lot of knowledge waiting to be
+                    shared with you.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark.svg"
+                            alt="Get to Homepage"></a></li>
+                <li>
+                    <ul class="legal">
+                        <li><a href="imprint.html"><small>imprint</small></a></li>
+                        <li><a href="dataprotection.html"><small>data protection</small></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="contact-icons">
+                        <li>
+                            <a href="mailto:knottedcloud@outlook.com" aria-label="click this icon to write me an email">
+                                <i class="fa-regular fa-envelope fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.etsy.com/shop/KnottedCloud" target="_blank" aria-label="click this icon to get to my Etsy shop">
+                                <i class="fa-brands fa-etsy fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/knottedcloud/" target="_blank" aria-label="click this icon to get to my Instagram page">
+                                <i class="fa-brands fa-instagram fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <div class="scroll-to-top-button">
+        <button onclick="topFunction()" id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
+    </div>
+
+    <script>
+
+        let mybutton = document.getElementById("sttB")
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+</body>

@@ -1,0 +1,220 @@
+/*Typografie*/
+@font-face {
+    font-family: Opificio;
+    src: url(/assets/fonts/opificio/Opificio_Bold_rounded.ttf);
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(/assets/fonts/Helvetica/Helvetica-01.ttf);
+}
+
+@font-face {
+    font-family: Helvetica Bold;
+    src: url(/assets/fonts/Helvetica/Helvetica-Bold.ttf);
+}
+
+/* Headings and Fonts */
+h1 {
+    font-family: var(--heading-font);
+    font-size: clamp(4rem, 10vw, 9.375rem);
+    line-height: 1.5;
+    color: var(--KC-orange);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: clamp(var(--header-mobile-size), 10vw, var(--header-size)) ;
+    line-height: 1.5;
+    color: var(--KC-orange);
+}
+
+h3 {
+    font-family: var(--heading-font);
+    font-size: clamp(var(--h3-mobile-size), 5vw, var(--h3-size));
+    color: var(--KC-orange);
+}
+
+h4 {
+    font-family: var(--bold-body-font);
+    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+    color: var(--text-color);
+    color: var(--KC-orange);
+}
+
+/* nav */ .teaser {
+    font-family: var(--heading-font);
+    font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
+    color: var(--KC-orange);
+}
+
+/* blocktext */ p {
+    font-family: var(--body-font);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    color: var(--text-color);
+    line-height: 150%;
+}
+
+/* Header */
+.main-header{
+    font-family: var(--heading-font);
+    color: var(--KC-orange);
+}
+
+/* Navigation */
+.main-nav{
+    font-size: var(--navigation-size);
+}
+
+/* Landingpage Homepage*/
+
+#main-landingpage > p{
+    font-family: var(--heading-font);
+    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+    color: var(--KC-orange);
+}
+
+/* HP Caruselle Section */
+.hp-caruselle-button > a {
+    color: var(--primary-background-color);
+    font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
+    font-family: var(--heading-font);
+}
+
+/* HP About Section */
+
+.homepage-about-section > div > p {
+    font-family: var(--body-font);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    color: var(--text-color);
+    line-height: 150%;
+}
+
+.homepage-about-section > .button {
+    font-family: var(--heading-font);
+    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));;
+    text-decoration: none;
+}
+
+/* Landingpage Projects */
+
+.projects-landingpage > p {
+    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+    font-family: var(--heading-font);
+    color: var(--KC-orange);
+}
+
+/* Projects Page */
+.infotext {
+    color: var(--KC-orange);
+    font-family: var(--body-font);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+}
+
+.desc {
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+}
+
+.Etsy-Link {
+    color: var(--KC-orange);
+    font-family: var(--body-font);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+}
+
+/* Landingpage Community */
+.community-landingpage > h2 {
+    text-align: right;
+}
+
+.community-landingpage > p {
+    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+    font-family: var(--heading-font);
+    color: var(--KC-orange);
+}
+
+/* Community Section */
+
+.community-section > div > p {
+    font-family: var(--body-font);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    color: var(--text-color);
+    line-height: 150%;
+}
+
+.button-box a {
+    color: var(--primary-background-color);
+    font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
+    font-family: var(--heading-font);
+}
+
+
+/* Landingpage Costumers */
+.costumers-landingpage > h2 {
+    text-align: left;
+}
+
+.costumers-landingpage > .teaser {
+    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+    font-family: var(--heading-font);
+    color: var(--KC-orange);
+}
+
+.costumers-landingpage > .teaser > span{
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    font-family: var(--body-font);
+    color: var(--KC-orange);
+}
+
+/* Costumers Page Section */
+.bg-2 > p {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-family: var(--heading-font);
+    color: var(--KC-orange);
+}
+
+.costumers-grid > .list > ul > li{
+    font-family: var(--body-font);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    color: var(--text-color);
+    line-height: 2;
+}
+
+/* Contact Page */
+.contact-landingpage > .teaser {
+    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+    font-family: var(--heading-font);
+    color: var(--KC-orange);
+}
+
+.contact-container form .button {
+    color: var(--primary-background-color);
+    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+    font-family: var(--heading-font);
+}
+
+.contact-container form input, textarea {
+    color: var(--text-color);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    font-family: var(--body-font);
+}
+
+/* imprint */
+.sources > p > span {
+    font-family: var(--bold-body-font);
+}
+
+/* data protection */
+.data-protection-section > p > span {
+    font-family: var(--bold-body-font);
+}
+
+
+/* Footer */
+ul > li > a > small{
+    font-family: var(--body-font);
+    font-size: 1.3rem;
+    color: var(--text-color);
+    line-height: 2;
+}

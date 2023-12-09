@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1104.475" height="886.556" viewBox="0 0 1104.475 886.556">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Pfad_44" data-name="Pfad 44" d="M1106.8,612.522c0,152.247-123.452,275.7-275.7,275.7H279.7C127.447,888.221,4,764.77,4,612.522s123.447-275.7,275.7-275.7c1.183,0,2.329,0,3.508.038.835,0,1.636.033,2.471.066a277.495,277.495,0,0,1-2.471-101.277C304.3,104.31,418.122,4,555.4,4,692.642,4,806.5,104.31,827.589,235.646a277.327,277.327,0,0,1-2.466,101.277c.834-.033,1.631-.066,2.466-.066,1.183-.038,2.329-.038,3.513-.038C983.35,336.819,1106.8,460.27,1106.8,612.522Z" transform="translate(-4 -4)" fill="#eae9e1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Pfad_44-2" data-name="Pfad 44" d="M937.506,519.106c0,128.875-104.5,233.375-233.375,233.375H237.375C108.5,752.481,4,647.981,4,519.106S108.5,285.726,237.375,285.726c1,0,1.972,0,2.97.032.706,0,1.385.028,2.091.056a234.894,234.894,0,0,1-2.091-85.729C258.2,88.911,354.548,4,470.751,4,586.926,4,683.3,88.911,701.157,200.085a234.754,234.754,0,0,1-2.087,85.729c.706-.028,1.381-.056,2.087-.056,1-.032,1.972-.032,2.974-.032C833.006,285.726,937.506,390.226,937.506,519.106Z" transform="translate(-4 -4)" fill="#eb6336"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_738" data-name="Gruppe 738" transform="translate(0)">
+    <g id="Brandmark_KC" data-name="Brandmark KC" transform="translate(0 0)" opacity="0.6">
+      <g id="Gruppe_208" data-name="Gruppe 208" transform="translate(0 0)">
+        <path id="Pfad_43" data-name="Pfad 43" d="M1107.153,612.912c0,152.252-123.447,275.7-275.7,275.7h-551.4c-152.252,0-275.7-123.447-275.7-275.7s123.447-275.7,275.7-275.7c1.179,0,2.325,0,3.508.033.835,0,1.631.038,2.466.071a277.639,277.639,0,0,1-2.466-101.281C304.654,104.7,418.477,4.39,555.754,4.39c137.239,0,251.1,100.31,272.191,231.646a277.646,277.646,0,0,1-2.466,101.281c.835-.033,1.631-.071,2.466-.071,1.179-.033,2.325-.033,3.508-.033C983.706,337.213,1107.153,460.66,1107.153,612.912Z" transform="translate(-2.678 -2.551)" fill="#eae9e1" opacity="0.51"/>
+        <g id="Gruppe_maskieren_7" data-name="Gruppe maskieren 7" transform="translate(0)" clip-path="url(#clip-path)">
+          <path id="cloud-orange-60" d="M0,608.521c0,152.252,123.448,275.7,275.7,275.7H827.1c152.252,0,275.7-123.448,275.7-275.7s-123.448-275.7-275.7-275.7c-1.181,0-2.328,0-3.509.035-.834,0-1.633.035-2.467.069a277.549,277.549,0,0,0,2.467-101.281C802.5,100.308,688.677,0,551.4,0,414.158,0,300.3,100.308,279.209,231.644a277.545,277.545,0,0,0,2.467,101.281c-.834-.035-1.633-.069-2.467-.069-1.181-.035-2.328-.035-3.509-.035C123.448,332.821,0,456.269,0,608.521Z" transform="translate(0 0)" fill="#eb6336" opacity="0.6"/>
+        </g>
+        <line id="Linie_195" data-name="Linie 195" y1="162.664" x2="419.173" transform="translate(416.738 331.713)" fill="none"/>
+        <line id="Linie_196" data-name="Linie 196" y1="192.029" x2="494.845" transform="translate(301.807 173.991)" fill="none"/>
+        <line id="Linie_197" data-name="Linie 197" x2="302.949" y2="388.778" transform="translate(27.452 493.344)" fill="none"/>
+        <line id="Linie_198" data-name="Linie 198" x2="389.584" y2="498.131" transform="translate(131.453 388.426)" fill="none"/>
+        <line id="Linie_199" data-name="Linie 199" x2="443.024" y2="558.903" transform="translate(278.341 325.318)" fill="none"/>
+        <line id="Linie_200" data-name="Linie 200" y1="166.272" x2="428.471" transform="translate(280.704 49.603)" fill="none"/>
+        <line id="Linie_201" data-name="Linie 201" x2="23.452" y2="466.013" transform="translate(967.612 370.976)" fill="none"/>
+        <line id="Linie_202" data-name="Linie 202" x2="24.189" y2="470.798" transform="translate(675.322 386.839)" fill="none"/>
+        <line id="Linie_203" data-name="Linie 203" x2="12.083" y2="210.54" transform="translate(529.47 449.986)" fill="none"/>
+        <line id="Linie_204" data-name="Linie 204" x2="26.936" y2="535.238" transform="translate(817.872 338.887)" fill="none"/>
+      </g>
+    </g>
+    <g id="Gruppe_735" data-name="Gruppe 735" transform="translate(84.776 68.049)" opacity="0.597">
+      <g id="Brandmark_KC-2" data-name="Brandmark KC" transform="translate(0 0)" opacity="0.6">
+        <g id="Gruppe_208-2" data-name="Gruppe 208" transform="translate(0 0)">
+          <path id="Pfad_43-2" data-name="Pfad 43" d="M937.858,519.5c0,128.879-104.5,233.376-233.376,233.376H237.731c-128.879,0-233.375-104.5-233.375-233.376S108.852,286.12,237.731,286.12c1,0,1.968,0,2.969.028.707,0,1.381.032,2.088.06a235.019,235.019,0,0,1-2.088-85.733C258.554,89.3,354.9,4.39,471.107,4.39,587.278,4.39,683.66,89.3,701.513,200.475a235.026,235.026,0,0,1-2.087,85.733c.707-.028,1.381-.06,2.087-.06,1-.028,1.968-.028,2.969-.028C833.362,286.12,937.858,390.616,937.858,519.5Z" transform="translate(-2.934 -2.833)" fill="#eb6336" opacity="0.51"/>
+          <g id="Gruppe_maskieren_4" data-name="Gruppe maskieren 4" transform="translate(0)" clip-path="url(#clip-path-2)">
+            <path id="cloud-orange-60-2" data-name="cloud-orange-60" d="M0,515.1C0,643.984,104.5,748.481,233.376,748.481H700.129c128.879,0,233.376-104.5,233.376-233.376s-104.5-233.376-233.376-233.376c-1,0-1.971,0-2.971.029-.706,0-1.382.029-2.088.059a234.939,234.939,0,0,0,2.088-85.733C679.306,84.91,582.956,0,466.753,0,350.579,0,254.2,84.91,236.347,196.083a234.937,234.937,0,0,0,2.088,85.733c-.706-.029-1.382-.059-2.088-.059-1-.029-1.971-.029-2.971-.029C104.5,281.728,0,386.225,0,515.1Z" transform="translate(0 0)" fill="#eb6336" opacity="0.6"/>
+          </g>
+          <line id="Linie_195-2" data-name="Linie 195" y1="137.693" x2="354.824" transform="translate(352.763 280.79)" fill="none"/>
+          <line id="Linie_196-2" data-name="Linie 196" y1="162.55" x2="418.879" transform="translate(255.477 147.281)" fill="none"/>
+          <line id="Linie_197-2" data-name="Linie 197" x2="256.442" y2="329.095" transform="translate(23.239 417.609)" fill="none"/>
+          <line id="Linie_198-2" data-name="Linie 198" x2="329.778" y2="421.661" transform="translate(111.274 328.797)" fill="none"/>
+          <line id="Linie_199-2" data-name="Linie 199" x2="375.014" y2="473.103" transform="translate(235.612 275.377)" fill="none"/>
+          <line id="Linie_200-2" data-name="Linie 200" y1="140.747" x2="362.695" transform="translate(237.613 41.989)" fill="none"/>
+          <line id="Linie_201-2" data-name="Linie 201" x2="19.852" y2="394.474" transform="translate(819.071 314.026)" fill="none"/>
+          <line id="Linie_202-2" data-name="Linie 202" x2="20.475" y2="398.524" transform="translate(571.652 327.453)" fill="none"/>
+          <line id="Linie_203-2" data-name="Linie 203" x2="10.228" y2="178.219" transform="translate(448.19 380.907)" fill="none"/>
+          <line id="Linie_204-2" data-name="Linie 204" x2="22.801" y2="453.072" transform="translate(692.318 286.863)" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

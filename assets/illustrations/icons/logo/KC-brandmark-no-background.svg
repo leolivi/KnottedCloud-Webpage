@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 242.24 195.92">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-7 {
+        opacity: .51;
+      }
+
+      .cls-3 {
+        stroke: #eb6336;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="242.24" height="195.92"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-2" width="242.24" height="195.92"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-2" width="242.24" height="195.92"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-2" x=".36" y=".39" width="241.88" height="195.53"/>
+    </clipPath>
+  </defs>
+  <g id="Ebene_2-2" data-name="Ebene 2">
+    <g id="Ebene_1-2" data-name="Ebene 1-2">
+      <g id="Brandmark_KC" data-name="Brandmark KC">
+        <g class="cls-1">
+          <g class="cls-4">
+            <g class="cls-6">
+              <g>
+                <g class="cls-7">
+                  <g class="cls-5">
+                    <path class="cls-3" d="m238.24,133.45c0,32.29-26.18,58.47-58.47,58.47H62.83c-32.29,0-58.47-26.18-58.47-58.47s26.18-58.47,58.47-58.47h.74c.18,0,.35,0,.52.01-.83-3.91-1.27-7.97-1.27-12.14,0-3.18.25-6.3.74-9.34,4.47-27.85,28.61-49.13,57.73-49.13s53.25,21.27,57.73,49.13c.49,3.04.74,6.16.74,9.34,0,4.16-.43,8.22-1.27,12.14.18,0,.35-.01.52-.01h.74c32.29,0,58.47,26.18,58.47,58.47h.02Z"/>
+                  </g>
+                </g>
+                <path class="cls-3" d="m237.88,133.06c0,32.29-26.18,58.47-58.47,58.47H62.47c-32.29,0-58.47-26.18-58.47-58.47s26.18-58.47,58.47-58.47h.74c.18,0,.35,0,.52.01-.83-3.91-1.27-7.97-1.27-12.14,0-3.18.25-6.3.74-9.34,4.49-27.85,28.63-49.12,57.74-49.12s53.25,21.27,57.73,49.13c.49,3.04.74,6.16.74,9.34,0,4.16-.43,8.22-1.27,12.14.18,0,.35-.01.52-.01h.74c32.29,0,58.47,26.18,58.47,58.47h0Z"/>
+                <line class="cls-3" x1="92.38" y1="108.85" x2="181.28" y2="74.35"/>
+                <line class="cls-3" x1="68.01" y1="81.63" x2="172.96" y2="40.9"/>
+                <line class="cls-3" x1="9.82" y1="108.63" x2="74.07" y2="191.08"/>
+                <line class="cls-3" x1="31.88" y1="86.38" x2="114.5" y2="192.02"/>
+                <line class="cls-3" x1="63.03" y1="72.99" x2="156.99" y2="191.53"/>
+                <line class="cls-3" x1="63.53" y1="49.78" x2="154.4" y2="14.52"/>
+                <line class="cls-3" x1="209.21" y1="82.68" x2="214.19" y2="181.51"/>
+                <line class="cls-3" x1="147.22" y1="86.04" x2="152.35" y2="185.89"/>
+                <line class="cls-3" x1="116.29" y1="99.43" x2="118.85" y2="144.09"/>
+                <line class="cls-3" x1="177.46" y1="75.87" x2="183.17" y2="189.39"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
