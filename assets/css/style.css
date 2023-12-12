@@ -1,6 +1,6 @@
 /* Header Homepage */
 .main-header.homepage {
-    background-image: url(/assets/illustrations/backgrounds/bg-homepage.svg);
+    background-image: url(../illustrations/backgrounds/bg-homepage.svg);
     background-repeat: no-repeat;
     background-size: 125%;
     background-position: -20vw 12vh;
@@ -93,7 +93,7 @@
 
 @media (max-width:1300px){
     .main-header.homepage {
-        background-image: url(/assets/illustrations/backgrounds/bg-homepage-mobil.svg);
+        background-image: url(../illustrations/backgrounds/bg-homepage-mobil.svg);
         background-repeat: no-repeat;
         background-size: 120%;
         background-position: -20vw 10vh;
@@ -114,7 +114,7 @@
 
 @media screen and (max-width:950px){ 
     .main-header.homepage {
-        background-image: url(/assets/illustrations/backgrounds/bg-homepage-mobil.svg);
+        background-image: url(../illustrations/backgrounds/bg-homepage-mobil.svg);
         background-repeat: no-repeat;
         background-size: 120%;
         background-position: -20vw 15vh;
@@ -151,7 +151,7 @@
     .main-nav .main-nav-items {
         width: 100%;
         height: 100vh;
-        background-image: url(/assets/illustrations/backgrounds/bg-navigation-mobile.svg);
+        background-image: url(../illustrations/backgrounds/bg-navigation-mobile.svg);
         background-repeat: no-repeat;
         background-size: 102%;
         background-position: -1vw -35vh;
@@ -194,7 +194,7 @@
 
 @media screen and (max-width:415px){ 
     .main-header.homepage {
-        background-image: url(/assets/illustrations/backgrounds/bg-homepage-mobil.svg);
+        background-image: url(../illustrations/backgrounds/bg-homepage-mobil.svg);
         background-repeat: no-repeat;
         background-size: 140%;
         background-position: -20vw 25vh;
@@ -204,7 +204,7 @@
 
 @media screen and (max-width:375px){ 
     .main-header.homepage {
-        background-image: url(/assets/illustrations/backgrounds/bg-homepage-mobil.svg);
+        background-image: url(../illustrations/backgrounds/bg-homepage-mobil.svg);
         background-repeat: no-repeat;
         background-size: 120%;
         background-position: -20vw 15vh;
@@ -214,7 +214,7 @@
 
 @media screen and (max-width:280px){ 
     .main-header.homepage {
-        background-image: url(/assets/illustrations/backgrounds/bg-homepage-mobil.svg);
+        background-image: url(../illustrations/backgrounds/bg-homepage-mobil.svg);
         background-repeat: no-repeat;
         background-size: 120%;
         background-position: -20vw 25vh;
@@ -292,11 +292,18 @@
     height: 85vh;
 }
 
-.main-header h1 {
+.main-header > h1 {
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
+}
+
+.main-header > h1 {
+    font-family: var(--heading-font);
+    font-size: clamp(4rem, 10vw, 9.375rem);
+    line-height: 1.5;
+    color: var(--KC-orange);
 }
 
 #main-landingpage > .teaser {
@@ -360,10 +367,10 @@
     width: 100%;
   }
 
-.saturation {
+/* .saturation {
     -webkit-filter: opacity(60%);
             filter: opacity(60%);
-}
+} */
 
 .hp-caruselle-arrows{
     padding: 1rem 0;
@@ -492,7 +499,7 @@
     padding-bottom: 10rem;
 }
 
-.homepage-about-section h3 {
+.homepage-about-section h2 {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
@@ -542,7 +549,7 @@
         gap: 2rem;
     }
 
-    .homepage-about-section h3 {
+    .homepage-about-section h2 {
         margin-bottom: 0rem;
     }
 

@@ -1,41 +1,41 @@
 /*Typografie*/
 @font-face {
     font-family: Opificio;
-    src: url(/assets/fonts/opificio/Opificio_Bold_rounded.ttf);
+    src: url(../fonts/opificio/Opificio_Bold_rounded.ttf);
 }
 
 @font-face {
     font-family: Helvetica;
-    src: url(/assets/fonts/Helvetica/Helvetica-01.ttf);
+    src: url(../fonts/Helvetica/Helvetica-01.ttf);
 }
 
 @font-face {
     font-family: Helvetica Bold;
-    src: url(/assets/fonts/Helvetica/Helvetica-Bold.ttf);
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
 }
 
 /* Headings and Fonts */
-h1 {
+/* h1 {
     font-family: var(--heading-font);
     font-size: clamp(4rem, 10vw, 9.375rem);
     line-height: 1.5;
     color: var(--KC-orange);
-}
+} */
 
-h2 {
+h1 {
     font-family: var(--heading-font);
     font-size: clamp(var(--header-mobile-size), 10vw, var(--header-size)) ;
     line-height: 1.5;
     color: var(--KC-orange);
 }
 
-h3 {
+h2 {
     font-family: var(--heading-font);
     font-size: clamp(var(--h3-mobile-size), 5vw, var(--h3-size));
     color: var(--KC-orange);
 }
 
-h4 {
+h3 {
     font-family: var(--bold-body-font);
     font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
     color: var(--text-color);

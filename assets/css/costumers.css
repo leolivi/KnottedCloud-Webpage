@@ -1,6 +1,6 @@
 /* Header costumers */
 .main-header.costumers {
-    background-image: url(/assets/illustrations/backgrounds/bg-costumers.svg);
+    background-image: url(../illustrations/backgrounds/bg-costumers.svg);
     background-repeat: no-repeat;
     background-size: 55%;
     background-position: 65vw 15vh;
@@ -16,7 +16,7 @@
     height: 85vh;
 }
 
-.costumers-landingpage h2 {
+.costumers-landingpage h1 {
     position: absolute;
     top: 50%;
     left: 45%;
@@ -47,7 +47,7 @@
 /* Responsive Navigation */
 @media (max-width:1030px){
     .main-header.costumers {
-        background-image: url(/assets/illustrations/backgrounds/bg-costumers.svg);
+        background-image: url(../illustrations/backgrounds/bg-costumers.svg);
         background-repeat: no-repeat;
         background-size: 140%;
         background-position: 40vw 15vh;
@@ -57,7 +57,7 @@
 
 @media (max-width:850px){
     .main-header.costumers {
-        background-image: url(/assets/illustrations/backgrounds/bg-costumers.svg);
+        background-image: url(../illustrations/backgrounds/bg-costumers.svg);
         background-repeat: no-repeat;
         background-size: 140%;
         background-position: 40vw 15vh;
@@ -72,7 +72,7 @@
         height: 85vh;
     }
 
-    .costumers-landingpage > h2 {
+    .costumers-landingpage > h1 {
         text-align: center;
         position: absolute;
         top: 50%;
@@ -100,7 +100,7 @@
 }
 
 @media screen and (max-width: 670px) {
-    .costumers-landingpage h2 {
+    .costumers-landingpage h1 {
         position: absolute;
         top: 40%;
         left: 50%;
@@ -110,7 +110,7 @@
 }
 
 @media screen and (max-height: 820px) {
-    .costumers-landingpage h2 {
+    .costumers-landingpage h1 {
         line-height: 1;
         text-align: center;
     }
@@ -121,14 +121,14 @@
 }
 
 @media screen and (max-height: 700px) {
-    .costumers-landingpage h2 {
+    .costumers-landingpage h1 {
         line-height: 1;
         width: 25rem;
     } 
 }
 
 @media screen and (max-width: 420px) {
-    .costumers-landingpage h2 {
+    .costumers-landingpage h1 {
         line-height: 1;
         width: 18rem;
     } 

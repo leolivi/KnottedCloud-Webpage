@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="main-header homepage">
         <nav class="main-nav">
             <a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark-no-background.svg" alt="Get to Homepage"></a>
@@ -28,7 +29,7 @@
                 <li><a class="active" href="#">home</a></li>
                 <li><a href="projects.html">projects</a></li>
                 <li><a href="community.html">community</a></li>
-                <li><a href="costumers.html">costumers</a></li>
+                <li><a href="customers.html">customers</a></li>
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
@@ -38,6 +39,7 @@
             <i class="fa-solid fa-chevron-down fa-2x"></i>
         </div>
     </header>
+    <!-- Caruselle / slider section -->
     <section class="hp-caruselle-section">
         <div class="hp-caruselle-container">
             <div class="hp-caruselle-objects saturation">
@@ -49,20 +51,30 @@
             <div class="hp-caruselle-objects saturation">
                 <img src="assets/images/image-macrame-necklace-rose-quartz.jpeg" srcset="assets/images/image-macrame-necklace-rose-quartz.webp" alt="handmade macrame necklace with rose quartz">
             </div>
+            <!-- <div class="hp-caruselle-objects">
+                <img src="assets/images/image-wallhanging-grey.jpeg" srcset="assets/images/image-wallhanging-grey.webp" alt="handmade grey macrame wallhanging with raffia details">
+            </div>
+            <div class="hp-caruselle-objects">
+                <img src="assets/images/image-macrame-keychain.jpeg" srcset="assets/images/image-macrame-keychain.webp" alt="handmade yellow macrame keychain in a feather shape">
+            </div>
+            <div class="hp-caruselle-objects">
+                <img src="assets/images/image-knitted-balaclava-Hector.jpeg" srcset="assets/images/image-knitted-balaclava-Hector.webp" alt="handmade Knitted Balaclava">
+            </div> -->
         </div>
         <div class="hp-caruselle-arrows">
-            <span class="arrow left"><i class="fa-solid fa-chevron-down fa-2x"></i></span>
+            <span class="arrow left" onclick="slideLeft()"><i class="fa-solid fa-chevron-down fa-2x"></i></span>
+            <span class="dot" onclick="slideLeft()"></span>
             <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="arrow right"><i class="fa-solid fa-chevron-down fa-2x"></i></span>
+            <span class="dot" onclick="slideRight()"></span>
+            <span class="arrow right" onclick="slideRight()"><i class="fa-solid fa-chevron-down fa-2x"></i></span>
         </div>
         <div class="hp-caruselle-button">
             <a href="projects.html">go to projects</a>
         </div>
     </section>
+    <!-- About me section -->
     <section class="homepage-about-section">
-        <h3>About me</h3>
+        <h2>About me</h2>
         <div class="about-grid">
             <p>Hello, my name is Leo and I am a creative soul and an hobby artist. I am into various creative
                 disciplines, be it knitting, sewing, pottery, crocheting or macrame.<br><br>With my projects I want to
@@ -79,6 +91,7 @@
             </div>
         </div>
     </section>
+    <!-- Footer -->
     <footer class="main-footer">
         <nav class="footer-nav">
             <ul>
@@ -112,13 +125,13 @@
             </ul>
         </nav>
     </footer>
-
+    <!-- Scroll to top button -->
     <div class="scroll-to-top-button">
         <button onclick="topFunction()" id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
     </div>
 
     <script>
-
+        // Scroll to top button
         let mybutton = document.getElementById("sttB")
 
         window.onscroll = function() {scrollFunction()};
@@ -136,6 +149,47 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+
+
+        // JavaScript code to create an image slider
+        const container = document.querySelector('.hp-caruselle-container');
+        const slides = document.querySelectorAll('.hp-caruselle-objects');
+        const slideWidth = slides[0].clientWidth;
+        let counter = 1;
+
+        function slideLeft() {
+            if (counter <= 0) {
+                counter = slides.length - 1;
+                container.style.transition = 'none';
+                container.style.transform = `translateX(${-slideWidth * counter}px)`;
+            } else {
+                counter--;
+                slide();
+            }
+            }
+
+        function slideRight() {
+        if (counter >= slides.length) {
+            counter = 1;
+            container.style.transition = 'none';
+            container.style.transform = `translateX(${-slideWidth * counter}px)`;
+        } else {
+            counter++;
+            slide();
+        }
+        }
+
+        function slide() {
+        container.style.transition = 'transform 0.5s ease';
+        container.style.transform = `translateX(${-slideWidth * counter}px)`;
+        }
+
+        // Automatisches Weiterleiten des Sliders
+        setInterval(() => {
+        slideRight();
+        }, 3000);
+
 
     </script>
 
