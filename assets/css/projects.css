@@ -45,6 +45,16 @@
 }
 
 /* Responsive Background */
+@media screen and (min-width: 1800px) {
+    .main-header.projects {
+        background-image: url(../illustrations/backgrounds/bg-projects.svg);
+        background-repeat: no-repeat;
+        background-size: 105%;
+        background-position: -15vw 0vh;
+        z-index: 100;
+    }
+}
+
 @media (max-width:1050px){
     .main-header.projects {
         background-image: url(../illustrations/backgrounds/bg-projects.svg);
@@ -261,6 +271,14 @@
     }
 }
 
+@media screen and (max-width: 1050px) {
+    .projects-image-container {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width:850px) {
     .projects-section {
         padding: 10rem 2rem;
@@ -279,11 +297,7 @@
         padding-bottom: 2rem;
     }
 
-    .projects-image-container {
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 1fr;
-    }
+    
 
     .projects-image-container img, source{
         width: 100%;

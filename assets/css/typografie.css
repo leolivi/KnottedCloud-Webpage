@@ -151,8 +151,8 @@ h3 {
 
 
 /* Landingpage Costumers */
-.costumers-landingpage > h2 {
-    text-align: left;
+.costumers-landingpage > h1 {
+    text-align: center;
 }
 
 .costumers-landingpage > .teaser {

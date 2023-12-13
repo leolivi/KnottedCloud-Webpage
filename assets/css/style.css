@@ -91,6 +91,12 @@
     display: none;
 }
 
+@media screen and (min-width: 1500px) {
+    .main-nav {
+        gap: 12rem;
+    }
+}
+
 @media (max-width:1300px){
     .main-header.homepage {
         background-image: url(../illustrations/backgrounds/bg-homepage-mobil.svg);
@@ -350,9 +356,12 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     gap: 2rem;
 }
 
@@ -362,7 +371,8 @@
   }
 
 .hp-caruselle-objects > img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
     width: 100%;
   }
@@ -381,7 +391,8 @@
     -webkit-box-direction: normal;
             flex-direction: row;
     cursor: pointer;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 
 .hp-caruselle-arrows .arrow {
@@ -418,8 +429,10 @@
 }
 
 .hp-caruselle-button {
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 
 .hp-caruselle-button > a {

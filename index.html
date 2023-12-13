@@ -153,42 +153,42 @@
 
 
         // JavaScript code to create an image slider
-        const container = document.querySelector('.hp-caruselle-container');
-        const slides = document.querySelectorAll('.hp-caruselle-objects');
-        const slideWidth = slides[0].clientWidth;
-        let counter = 1;
+        // const container = document.querySelector('.hp-caruselle-container');
+        // const slides = document.querySelectorAll('.hp-caruselle-objects');
+        // const slideWidth = slides[0].clientWidth;
+        // let counter = 1;
 
-        function slideLeft() {
-            if (counter <= 0) {
-                counter = slides.length - 1;
-                container.style.transition = 'none';
-                container.style.transform = `translateX(${-slideWidth * counter}px)`;
-            } else {
-                counter--;
-                slide();
-            }
-            }
+        // function slideLeft() {
+        //     if (counter <= 0) {
+        //         counter = slides.length - 1;
+        //         container.style.transition = 'none';
+        //         container.style.transform = `translateX(${-slideWidth * counter}px)`;
+        //     } else {
+        //         counter--;
+        //         slide();
+        //     }
+        //     }
 
-        function slideRight() {
-        if (counter >= slides.length) {
-            counter = 1;
-            container.style.transition = 'none';
-            container.style.transform = `translateX(${-slideWidth * counter}px)`;
-        } else {
-            counter++;
-            slide();
-        }
-        }
+        // function slideRight() {
+        // if (counter >= slides.length) {
+        //     counter = 1;
+        //     container.style.transition = 'none';
+        //     container.style.transform = `translateX(${-slideWidth * counter}px)`;
+        // } else {
+        //     counter++;
+        //     slide();
+        // }
+        // }
 
-        function slide() {
-        container.style.transition = 'transform 0.5s ease';
-        container.style.transform = `translateX(${-slideWidth * counter}px)`;
-        }
+        // function slide() {
+        // container.style.transition = 'transform 0.5s ease';
+        // container.style.transform = `translateX(${-slideWidth * counter}px)`;
+        // }
 
-        // Automatisches Weiterleiten des Sliders
-        setInterval(() => {
-        slideRight();
-        }, 3000);
+        // // Automatisches Weiterleiten des Sliders
+        // setInterval(() => {
+        // slideRight();
+        // }, 3000);
 
 
     </script>

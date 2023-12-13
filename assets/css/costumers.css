@@ -19,9 +19,9 @@
 .costumers-landingpage h1 {
     position: absolute;
     top: 50%;
-    left: 45%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    left: 40%;
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
 }
 
 .costumers-landingpage > .teaser {
@@ -66,6 +66,12 @@
 }
 
 /* Responsive Landingpage Costumers */
+@media screen and (max-width: 1300px) {
+    .costumers-landingpage h1 {
+        width: 70vw;
+    }
+}
+
 @media screen and (max-width:1030px){
     .costumers-landingpage {
         width: 100%;
@@ -79,6 +85,7 @@
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
+        width: 50vw;
     }
 
     .costumers-landingpage > .teaser {
@@ -111,7 +118,7 @@
 
 @media screen and (max-height: 820px) {
     .costumers-landingpage h1 {
-        line-height: 1;
+        /* line-height: 1; */
         text-align: center;
     }
 
