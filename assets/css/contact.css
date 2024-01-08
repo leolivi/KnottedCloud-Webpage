@@ -261,6 +261,19 @@
     background-color: var(--KC-orangehover);
 }
 
+form .error {
+    width: 80%;
+    margin-top: -1rem;
+    margin-left: 2rem;
+}
+
+form .success {
+    width: 80%;
+    margin-top: -1rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+
 /* Responsive Contact Form*/
 @media screen and (max-width:1200px) {
     .contact-section {
@@ -274,6 +287,14 @@
     .contact-container form input {
         width: 100%;
     }
+
+    form .error {
+        width: 100%;
+    }
+
+    form .success {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:850px) {
@@ -284,4 +305,5 @@
     .contact-section > p{
         padding: 2rem 0;
     }
+
 }

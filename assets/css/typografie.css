@@ -33,6 +33,7 @@ h2 {
     font-family: var(--heading-font);
     font-size: clamp(var(--h3-mobile-size), 5vw, var(--h3-size));
     color: var(--KC-orange);
+    text-align: center;
 }
 
 h3 {
@@ -197,6 +198,18 @@ h3 {
 .contact-container form input, textarea {
     color: var(--text-color);
     font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    font-family: var(--body-font);
+}
+
+.error {
+    color: var(--KC-orange);
+    font-size: clamp(var(--blocktext-mobile-size), 2vw, var(--blocktext-size));
+    font-family: var(--body-font);
+}
+
+.success {
+    color: var(--KC-orange);
+    font-size: clamp(var(--blocktext-mobile-size), 2vw, var(--blocktext-size));
     font-family: var(--body-font);
 }
 
