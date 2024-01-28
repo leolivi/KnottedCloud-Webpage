@@ -23,7 +23,7 @@
             justify-content: space-evenly;
     -webkit-box-align: center;
             align-items: center;
-    gap: 8rem;
+    gap: 6rem;
 }
 
 .main-nav > a > img {
@@ -35,7 +35,7 @@
     display: -webkit-box;
     display: flex;
     list-style: none;
-    gap: 8rem;
+    gap: 6rem;
     float: right;
 }
 
@@ -94,6 +94,12 @@
 @media screen and (min-width: 1500px) {
     .main-nav {
         gap: 12rem;
+    }
+
+    .main-nav ul {
+        display: -webkit-box;
+        display: flex;
+        gap: 8rem;
     }
 }
 
@@ -345,94 +351,86 @@
 }
 
 /* Section Caruselle */
-.hp-caruselle-section {
-    margin: 10rem 0;
+.container {
+    margin: 10rem 0 0;
     width: 100%;
-    height: 100vh;
-}
-
-.hp-caruselle-container {
     height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
 
-.hp-caruselle-objects {
-    aspect-ratio: 1/1;
+.slider {
+    width: 250rem;
     height: 40rem;
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    transform: translateX(-340px);
+    scroll-behavior: smooth;
   }
 
-.hp-caruselle-objects > img {
+  .slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.6;
+    transition: 0.5s opacity linear;
+    scroll-snap-type: x proximity;
+  }
+  
+  .slide:nth-child(4) {
+    opacity: 1;
+    transition: 1s opacity;
+  }
+
+.slide > img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 100%;
-    width: 100%;
   }
 
-/* .saturation {
-    -webkit-filter: opacity(60%);
-            filter: opacity(60%);
-} */
-
-.hp-caruselle-arrows{
-    padding: 1rem 0;
-    margin: 2rem 0;
-    display: -webkit-box;
+.controls-container{
+    margin-top: 1rem;
+    width: 20%;
+    height: auto;
+    position: relative;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    cursor: pointer;
-    -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
 
-.hp-caruselle-arrows .arrow {
+.controls-container .arrow, .pause, .play{
     color: var(--KC-orange);
+    cursor: pointer;
+    padding: 1rem;
 }
 
-.hp-caruselle-arrows .arrow.left i{
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+.controls-container .arrow.left i{
+    transform: rotate(90deg);
     margin-right: 1rem;
-}
-
-.hp-caruselle-arrows .arrow.right i{
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .controls-container .arrow.right i{
+    transform: rotate(-90deg);
     margin-left: 1rem;
-}
-
-.hp-caruselle-arrows .dot {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    height: 1rem;
-    width: 1rem;
-    background-color: var(--KC-orange);
-    border-radius: 50%;
-    margin: 0.5rem;
-}
-
-.hp-caruselle-arrows .dot:hover {
-    background-color: var(--KC-yellow);
-}
+    border-radius: 0 10px 10px 0;
+  }
+  
+  
+  .controls-container i:hover {
+    color: var(--KC-yellow);
+  }
 
 .hp-caruselle-button {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
             justify-content: center;
+    margin-top: 2rem;
 }
 
 .hp-caruselle-button > a {
@@ -446,7 +444,7 @@
     padding: 1rem 0;
     background-color: var(--KC-orange);
     border-radius: 35px;
-    width: 15rem;
+    width: 10rem;
 }
 
 .hp-caruselle-button > a:link {
@@ -464,52 +462,50 @@
 
 
 /* Responsive Caruselle HP */
-@media screen and (max-width:1200px){
-    .hp-caruselle-container img {
-        width: 60%;
-    }
-
-    .hp-caruselle-objects {
-        aspect-ratio: 1/1;
-        height: auto;
-        width: 100%;
-      }
-
-      .hp-caruselle-container img {
-        width: 100%;
+@media screen and (max-width:1300px){
+    .slider {
+      width: 250rem;
+      height: 40rem;
+      transform: translateX(-335px);
     }
 }
 
-
-@media screen and (max-width:850px){
-    .hp-caruselle-container {
-        grid-template-columns: 1fr;
-    }
-
-    .hp-caruselle-objects {
-        aspect-ratio: 1/1;
-        height: auto;
-        width: 100%;
-      }
-
-    .hp-caruselle-container img {
-        width: 100%;
-    }
-
-    .saturation {
-        display: none;
-    }
-
-    .hp-caruselle-section > a {
-        width: 13rem;
+@media screen and (max-width:650px){
+    .slider {
+      width: 200rem;
+      height: 35rem;
+      transform: translateX(-270px);
     }
 }
+  
+  @media screen and (max-width:480px){
+    .slider {
+      width: 200rem;
+      height: 30rem;
+      transform: translateX(-270px);
+    }
+  }
+  
+  @media screen and (max-width:300px){
+    .slider {
+      width: 100rem;
+      height: 25rem;
+      transform: translateX(-135px);
+    }
+  }
+  
+  @media screen and (max-height:600px){
+    .slider {
+      width: 150rem;
+      height: 25rem;
+      transform: translateX(-200px);
+    }
+  }
 
 
 /* About Section */
 .homepage-about-section {
-    padding: 0 6rem;
-    padding-bottom: 10rem;
+    padding: 10rem 6rem;
 }
 
 .homepage-about-section h2 {
@@ -550,8 +546,7 @@
 /* Responsive About Section */
 @media (max-width:1200px){
     .homepage-about-section {
-        padding: 0 2rem;
-        padding-bottom: 10rem;
+        padding: 10rem 2rem;
     }
 
     .about-grid {
@@ -606,7 +601,8 @@
 }
 
 .main-footer > .footer-nav > ul > li img {
-    height: 5rem;
+    height: 3.5rem;
+    margin-right: 3.5rem;
     width: auto;
     -o-object-fit: fill;
        object-fit: fill;
@@ -667,6 +663,10 @@
         -webkit-box-direction: normal;
                 flex-direction: column;
         gap: 4.063rem;
+    }
+
+    .main-footer > .footer-nav > ul > li img {
+        margin-right: 0rem;
     }
 }
 

@@ -200,6 +200,7 @@
     position: absolute;
     bottom: 1rem;
     width: 100%;
+    /* display: none; */
 }
 
 .info-icon{
@@ -214,6 +215,20 @@
     right: 0.8rem;
     cursor: pointer;
 }
+
+/* .info-icon:active {
+    .desc {
+        display: block;
+        display: flex;
+    }
+}
+
+.info-icon:hover {
+    .desc {
+        display: block;
+        display: flex;
+    }
+} */
 
 .info-icon > img {
     height: 2rem;

@@ -183,7 +183,7 @@ h3 {
 }
 
 /* Contact Page */
-.contact-landingpage > .teaser {
+.contact-landingpage > .teaser > p {
     font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
     font-family: var(--heading-font);
     color: var(--KC-orange);
@@ -195,8 +195,51 @@ h3 {
     font-family: var(--heading-font);
 }
 
+.title-select {
+    color: var(--text-color);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    font-family: var(--body-font)
+}
+
+.title-select option {
+    color: var(--text-color);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    font-family: var(--body-font);
+    opacity: 0.6;
+}
+
 .contact-container form input, textarea {
     color: var(--text-color);
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    font-family: var(--body-font);
+}
+
+elect::-webkit-input-placeholder {
+    color: #39393943;
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    font-family: var(--body-font);
+}
+
+select::-moz-placeholder {
+    color: #39393943;
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    font-family: var(--body-font);
+}
+
+select:-ms-input-placeholder {
+    color: #39393943;
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    font-family: var(--body-font);
+}
+
+select::-ms-input-placeholder {
+    color: #39393943;
+    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+    font-family: var(--body-font);
+}
+
+select::placeholder {
+    color: #39393943;
     font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
     font-family: var(--body-font);
 }
@@ -210,6 +253,12 @@ h3 {
 .success {
     color: var(--KC-orange);
     font-size: clamp(var(--blocktext-mobile-size), 2vw, var(--blocktext-size));
+    font-family: var(--body-font);
+}
+
+.checkbox > div {
+    color: var(--text-color);
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-family: var(--body-font);
 }
 

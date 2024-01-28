@@ -28,8 +28,8 @@ html, body {
     --body-font:'Helvetica', 'serif';
     --bold-body-font: 'Helvetica Bold', 'serif bold';
     --heading-font: 'Opificio', 'sans-serif';
-    --navigation-size: 1.688rem;
-    --nav-mobile-size: 1.563rem;
+    --navigation-size: 1.5rem;
+    --nav-mobile-size: 1.5rem;
     --header-size: 7.5rem;
     --header-mobile-size: 3.5rem;
     --blocktext-size: 1.5rem;

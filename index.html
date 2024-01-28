@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/typografie.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
     <script src="assets/javascript/slider.js" defer></script>
 </head>
 
@@ -36,41 +36,42 @@
         </nav>
         <div id="main-landingpage"> <!-- ID weil andere Startseiten der Unterseiten kleinere Font haben -->
             <h1>Knotted Cloud</h1>
-            <p class="teaser">gallery</p>
+            <p class="teaser">explore</p>
             <i class="fa-solid fa-chevron-down fa-2x"></i>
         </div>
     </header>
     <!-- Caruselle / slider section -->
-    <section class="hp-caruselle-section">
-        <div class="hp-caruselle-container">
-            <div class="hp-caruselle-objects saturation">
+    <section class="container">
+        <!-- Container images -->
+        <div class="slider">
+            <div class="slide">
                 <img src="assets/images/image-knitted-scarf-Leo.jpg" srcset="assets/images/image-knitted-scarf-Leo.webp" alt="handmade knitted scarf">
             </div>
-            <div class="hp-caruselle-objects">
+            <div class="slide">
                 <img src="assets/images/image-wallhanging-pink.jpeg" srcset="assets/images/image-wallhanging-pink.webp" alt="handmade pink macrame wallhanging with raffia details">
             </div>
-            <div class="hp-caruselle-objects saturation">
+            <div class="slide">
                 <img src="assets/images/image-macrame-necklace-rose-quartz.jpeg" srcset="assets/images/image-macrame-necklace-rose-quartz.webp" alt="handmade macrame necklace with rose quartz">
             </div>
-            <!-- <div class="hp-caruselle-objects">
+            <div class="slide opacity">
                 <img src="assets/images/image-wallhanging-grey.jpeg" srcset="assets/images/image-wallhanging-grey.webp" alt="handmade grey macrame wallhanging with raffia details">
             </div>
-            <div class="hp-caruselle-objects">
-                <img src="assets/images/image-macrame-keychain.jpeg" srcset="assets/images/image-macrame-keychain.webp" alt="handmade yellow macrame keychain in a feather shape">
+            <div class="slide">
+                <img src="assets/images/image-macrame-keychain.jpeg" srcset="assets/images/image-macrame-keychain.webp" alt="handmade yellow macrame ke a feather shape">
             </div>
-            <div class="hp-caruselle-objects">
+            <div class="slide">
                 <img src="assets/images/image-knitted-balaclava-Hector.jpeg" srcset="assets/images/image-knitted-balaclava-Hector.webp" alt="handmade Knitted Balaclava">
-            </div> -->
+            </div>
         </div>
-        <div class="hp-caruselle-arrows">
-            <span class="arrow left" onclick="slideLeft()"><i class="fa-solid fa-chevron-down fa-2x"></i></span>
-            <span class="dot" onclick="slideLeft()"></span>
-            <span class="dot"></span>
-            <span class="dot" onclick="slideRight()"></span>
-            <span class="arrow right" onclick="slideRight()"><i class="fa-solid fa-chevron-down fa-2x"></i></span>
+        <!-- Click left - right -->
+        <div class="controls-container">
+            <span class="arrow left"><i id="left-arrow" class="fa-solid fa-chevron-down fa-2x"></i></span>
+            <span class="pause"><i class="fa-solid fa-pause fa-2x"></i></span>
+            <span class="play""><i class="fa-solid fa-play fa-2x"></i></span>
+            <span class="arrow right"><i id="right-arrow" class="fa-solid fa-chevron-down fa-2x"></i></span>
         </div>
         <div class="hp-caruselle-button">
-            <a href="projects.html">go to projects</a>
+            <a href="projects.html">see more</a>
         </div>
     </section>
     <!-- About me section -->
@@ -150,47 +151,6 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-
-
-
-        // JavaScript code to create an image slider
-        // const container = document.querySelector('.hp-caruselle-container');
-        // const slides = document.querySelectorAll('.hp-caruselle-objects');
-        // const slideWidth = slides[0].clientWidth;
-        // let counter = 1;
-
-        // function slideLeft() {
-        //     if (counter <= 0) {
-        //         counter = slides.length - 1;
-        //         container.style.transition = 'none';
-        //         container.style.transform = `translateX(${-slideWidth * counter}px)`;
-        //     } else {
-        //         counter--;
-        //         slide();
-        //     }
-        //     }
-
-        // function slideRight() {
-        // if (counter >= slides.length) {
-        //     counter = 1;
-        //     container.style.transition = 'none';
-        //     container.style.transform = `translateX(${-slideWidth * counter}px)`;
-        // } else {
-        //     counter++;
-        //     slide();
-        // }
-        // }
-
-        // function slide() {
-        // container.style.transition = 'transform 0.5s ease';
-        // container.style.transform = `translateX(${-slideWidth * counter}px)`;
-        // }
-
-        // // Automatisches Weiterleiten des Sliders
-        // setInterval(() => {
-        // slideRight();
-        // }, 3000);
-
 
     </script>
 
