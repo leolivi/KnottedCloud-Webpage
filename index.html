@@ -12,32 +12,44 @@
     <link rel="stylesheet" href="assets/css/typografie.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
     <script src="assets/javascript/slider.js" defer></script>
+    <script src="assets/javascript/buttons.js" defer></script>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="main-header homepage">
+    <header class="main-header homepage">      
+        <!-- Navigation -->
         <nav class="main-nav">
             <a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark-no-background.svg" alt="Get to Homepage"></a>
-            <input type="checkbox" id="check" aria-hidden="true" aria-label="check this box to see menu">
-            <label for="check" class="check-bar">
+            <button class="burger-icon">
                 <i class="fa-solid fa-bars fa-2x" id="menu-icon" ></i>
                 <i class="fa-solid fa-xmark fa-2x" id="close-icon"></i>
-            </label>
+            </button>
+            <!-- Menu -->
             <ul class="main-nav-items">
-                <li><a class="active" href="#">home</a></li>
-                <li><a href="projects.html">projects</a></li>
-                <li><a href="community.html">community</a></li>
-                <li><a href="customers.html">customers</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a class="nav-item active" href="#">home</a></li>
+                <li><a class="nav-item" href="projects.html">projects</a></li>
+                <li><a class="nav-item" href="community.html">community</a></li>
+                <li><a class="nav-item" href="customers.html">customers</a></li>
+                <li><a class="nav-item" href="contact.html">contact</a></li>
+            </ul>
+            <!-- Mobile Menu -->
+            <ul class="menu">
+                <li><a class="nav-item active" href="#">home</a></li>
+                <li><a class="nav-item" href="projects.html">projects</a></li>
+                <li><a class="nav-item" href="community.html">community</a></li>
+                <li><a class="nav-item" href="customers.html">customers</a></li>
+                <li><a class="nav-item" href="contact.html">contact</a></li>
             </ul>
         </nav>
+        <!-- H1 and Teaser -->
         <div id="main-landingpage"> <!-- ID weil andere Startseiten der Unterseiten kleinere Font haben -->
             <h1>Knotted Cloud</h1>
-            <p class="teaser">explore</p>
-            <i class="fa-solid fa-chevron-down fa-2x"></i>
+            <button class="teaser">
+                <p>explore</p>
+                <i class="fa-solid fa-chevron-down fa-2x"></i>
+            </button>
         </div>
     </header>
     <!-- Caruselle / slider section -->
@@ -77,6 +89,7 @@
     <!-- About me section -->
     <section class="homepage-about-section">
         <h2>About me</h2>
+        <!-- About me grid -->
         <div class="about-grid">
             <p>Hello, my name is Leo and I am a creative soul and an hobby artist. I am into various creative
                 disciplines, be it knitting, sewing, pottery, crocheting or macrame.<br><br>With my projects I want to
@@ -97,14 +110,18 @@
     <footer class="main-footer">
         <nav class="footer-nav">
             <ul>
+                <!-- Logo / HP Button -->
                 <li><a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark.svg"
-                            alt="Get to Homepage"></a></li>
+                            alt="Get to Homepage"></a>
+                </li>
+                <!-- Legal section -->
                 <li>
                     <ul class="legal">
                         <li><a href="imprint.html"><small>imprint</small></a></li>
                         <li><a href="dataprotection.html"><small>data protection</small></a></li>
                     </ul>
                 </li>
+                <!-- Icons section -->
                 <li>
                     <ul class="contact-icons">
                         <li>
@@ -129,31 +146,8 @@
     </footer>
     <!-- Scroll to top button -->
     <div class="scroll-to-top-button">
-        <button onclick="topFunction()" id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
+        <button id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
     </div>
-
-    <script>
-        // Scroll to top button
-        let mybutton = document.getElementById("sttB")
-
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
-
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-    </script>
-
 </body>
 
 </html>

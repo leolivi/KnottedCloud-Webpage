@@ -13,25 +13,32 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dataprotection.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
 
 <body>
     <!-- Header -->
     <header class="main-header dataprotection">
+        <!-- Navigation -->
         <nav class="main-nav">
             <a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark-no-background.svg" alt="Logo Icon to get to Homepage"></a>
-            <input type="checkbox" id="check" aria-hidden="true" aria-label="check this box to see menu">
-            <label for="check" class="check-bar">
+            <button class="burger-icon">
                 <i class="fa-solid fa-bars fa-2x" id="menu-icon" ></i>
                 <i class="fa-solid fa-xmark fa-2x" id="close-icon"></i>
-            </label>
+            </button>
+            <!-- Menu -->
             <ul class="main-nav-items">
                 <li><a href="index.html">home</a></li>
                 <li><a href="projects.html">projects</a></li>
                 <li><a href="community.html">community</a></li>
                 <li><a href="customers.html">customers</a></li>
                 <li><a href="contact.html">contact</a></li>
+            </ul>
+            <!-- Mobile Menu -->
+            <ul class="menu">
+                <li><a class="nav-item" href="index.html">home</a></li>
+                <li><a class="nav-item" href="projects.html">projects</a></li>
+                <li><a class="nav-item" href="community.html">community</a></li>
+                <li><a class="nav-item" href="customers.html">customers</a></li>
+                <li><a class="nav-item" href="contact.html">contact</a></li>
             </ul>
         </nav>
     </header>
@@ -223,14 +230,18 @@
     <footer class="main-footer">
         <nav class="footer-nav">
             <ul>
+                <!-- Logo / HP Button -->
                 <li><a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark.svg"
-                            alt="Get to Homepage"></a></li>
+                            alt="Get to Homepage"></a>
+                </li>
+                <!-- Legal section -->
                 <li>
                     <ul class="legal">
                         <li><a href="imprint.html"><small>imprint</small></a></li>
                         <li><a href="dataprotection.html"><small>data protection</small></a></li>
                     </ul>
                 </li>
+                <!-- Icons section -->
                 <li>
                     <ul class="contact-icons">
                         <li>
@@ -255,11 +266,32 @@
     </footer>
     <!-- Scroll to top button -->
     <div class="scroll-to-top-button">
-        <button onclick="topFunction()" id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
+        <button id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
     </div>
 
     <script>
-        // Scroll to top button
+        // Burger Icon
+        const menu = document.querySelector(".menu");
+        const navItems = document.querySelectorAll(".menu-item");
+        const hamburger= document.querySelector(".burger-icon");
+        const closeIcon= document.querySelector("#close-icon");
+        const menuIcon = document.querySelector("#menu-icon");
+
+        function toggleMenu() {
+        if (menu.classList.contains("showMenu")) {
+            menu.classList.remove("showMenu");
+            closeIcon.style.display = "none";
+            menuIcon.style.display = "block";
+        } else {
+            menu.classList.add("showMenu");
+            closeIcon.style.display = "block";
+            menuIcon.style.display = "none";
+        }
+        }
+
+        hamburger.addEventListener("click", toggleMenu);
+
+         // Scroll to top button
         let mybutton = document.getElementById("sttB")
 
         window.onscroll = function() {scrollFunction()};
@@ -272,12 +304,9 @@
         }
         }
 
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
+        mybutton.addEventListener('click', () => window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+        }));
     </script>
-
 </body>

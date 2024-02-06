@@ -1,43 +1,47 @@
 /* Small Reset */
-*::before, *::after, * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
+*::before,
+*::after,
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 i {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-html, body {
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
 /* Variables */
 :root {
-    --text-color: #393939;
-    --primary-background-color: #ffffff;
-    --KC-orange: #F55E16;
-    --KC-orangehover: #F55E1699;
-    --KC-yellow:#EBB544;
-    --KC-brown: #EAE9E1;
-    --KC-brownhover:#eae9e1c5;
-    --footer-background-color: #EAE9E1;
-    --body-font:'Helvetica', 'serif';
-    --bold-body-font: 'Helvetica Bold', 'serif bold';
-    --heading-font: 'Opificio', 'sans-serif';
-    --navigation-size: 1.5rem;
-    --nav-mobile-size: 1.5rem;
-    --header-size: 7.5rem;
-    --header-mobile-size: 3.5rem;
-    --blocktext-size: 1.5rem;
-    --blocktext-mobile-size: 1.2rem;
-    --h3-size: 3.5rem;
-    --h3-mobile-size: 2rem;
+  --text-color: #393939;
+  --primary-background-color: #ffffff;
+  --KC-orange: #f55e16;
+  --KC-orangehover: #f55e1699;
+  --KC-yellow: #ebb544;
+  --KC-brown: #eae9e1;
+  --KC-brownhover: #eae9e1c5;
+  --footer-background-color: #eae9e1;
+  --body-font: "Helvetica", "serif";
+  --bold-body-font: "Helvetica Bold", "serif bold";
+  --heading-font: "Opificio", "sans-serif";
+  --navigation-size: 1.5rem;
+  --nav-mobile-size: 1.5rem;
+  --header-size: 7.5rem;
+  --header-mobile-size: 3.5rem;
+  --blocktext-size: 1.5rem;
+  --blocktext-mobile-size: 1.2rem;
+  --h3-size: 3.5rem;
+  --h3-mobile-size: 2rem;
 }
 
 .about-grid > div > picture {
-    display: contents;
+  display: contents;
 }

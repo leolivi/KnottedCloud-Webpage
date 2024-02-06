@@ -1,17 +1,17 @@
 /*Typografie*/
 @font-face {
-    font-family: Opificio;
-    src: url(../fonts/opificio/Opificio_Bold_rounded.ttf);
+  font-family: Opificio;
+  src: url(../fonts/opificio/Opificio_Bold_rounded.ttf);
 }
 
 @font-face {
-    font-family: Helvetica;
-    src: url(../fonts/Helvetica/Helvetica-01.ttf);
+  font-family: Helvetica;
+  src: url(../fonts/Helvetica/Helvetica-01.ttf);
 }
 
 @font-face {
-    font-family: Helvetica Bold;
-    src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+  font-family: Helvetica Bold;
+  src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
 }
 
 /* Headings and Fonts */
@@ -23,260 +23,276 @@
 } */
 
 h1 {
-    font-family: var(--heading-font);
-    font-size: clamp(var(--header-mobile-size), 10vw, var(--header-size)) ;
-    line-height: 1.5;
-    color: var(--KC-orange);
+  font-family: var(--heading-font);
+  font-size: clamp(var(--header-mobile-size), 10vw, var(--header-size));
+  line-height: 1.5;
+  color: var(--KC-orange);
 }
 
 h2 {
-    font-family: var(--heading-font);
-    font-size: clamp(var(--h3-mobile-size), 5vw, var(--h3-size));
-    color: var(--KC-orange);
-    text-align: center;
+  font-family: var(--heading-font);
+  font-size: clamp(var(--h3-mobile-size), 5vw, var(--h3-size));
+  color: var(--KC-orange);
+  text-align: center;
 }
 
 h3 {
-    font-family: var(--bold-body-font);
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
-    color: var(--text-color);
-    color: var(--KC-orange);
+  font-family: var(--bold-body-font);
+  font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+  color: var(--text-color);
+  color: var(--KC-orange);
 }
 
-/* nav */ .teaser {
-    font-family: var(--heading-font);
-    font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
-    color: var(--KC-orange);
+.teaser > p {
+  font-family: var(--heading-font);
+  font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
+  color: var(--KC-orange);
 }
 
-/* blocktext */ p {
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    color: var(--text-color);
-    line-height: 150%;
+i {
+  color: var(--KC-orange);
+}
+
+/* blocktext */
+p {
+  font-family: var(--body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  color: var(--text-color);
+  line-height: 150%;
 }
 
 /* Header */
-.main-header{
-    font-family: var(--heading-font);
-    color: var(--KC-orange);
+.main-header {
+  font-family: var(--heading-font);
+  color: var(--KC-orange);
 }
 
 /* Navigation */
-.main-nav{
-    font-size: var(--navigation-size);
+.main-nav {
+  font-size: var(--navigation-size);
 }
 
 /* Landingpage Homepage*/
 
-#main-landingpage > p{
-    font-family: var(--heading-font);
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
-    color: var(--KC-orange);
+#main-landingpage > p {
+  font-family: var(--heading-font);
+  font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+  color: var(--KC-orange);
 }
 
 /* HP Caruselle Section */
 .hp-caruselle-button > a {
-    color: var(--primary-background-color);
-    font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
-    font-family: var(--heading-font);
+  color: var(--primary-background-color);
+  font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
+  font-family: var(--heading-font);
 }
 
 /* HP About Section */
 
 .homepage-about-section > div > p {
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    color: var(--text-color);
-    line-height: 150%;
+  font-family: var(--body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  color: var(--text-color);
+  line-height: 150%;
 }
 
 .homepage-about-section > .button {
-    font-family: var(--heading-font);
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));;
-    text-decoration: none;
+  font-family: var(--heading-font);
+  font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+  text-decoration: none;
 }
 
 /* Landingpage Projects */
 
 .projects-landingpage > p {
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
-    font-family: var(--heading-font);
-    color: var(--KC-orange);
+  font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+  font-family: var(--heading-font);
+  color: var(--KC-orange);
 }
 
 /* Projects Page */
 .infotext {
-    color: var(--KC-orange);
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  color: var(--KC-orange);
+  font-family: var(--body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
 }
 
-.desc {
-    color: var(--text-color);
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+.projects-h3 {
+  color: var(--text-color);
+  font-family: var(--bold-body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+}
+
+.desc-text {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
 }
 
 .Etsy-Link {
-    color: var(--KC-orange);
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  color: var(--KC-orange);
+  font-family: var(--body-font);
+  font-size: clamp(1.1rem, 3vw, 1.2rem);
 }
 
 /* Landingpage Community */
 .community-landingpage > h2 {
-    text-align: right;
+  text-align: right;
 }
 
 .community-landingpage > p {
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
-    font-family: var(--heading-font);
-    color: var(--KC-orange);
+  font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+  font-family: var(--heading-font);
+  color: var(--KC-orange);
 }
 
 /* Community Section */
 
 .community-section > div > p {
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    color: var(--text-color);
-    line-height: 150%;
+  font-family: var(--body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  color: var(--text-color);
+  line-height: 150%;
 }
 
 .button-box a {
-    color: var(--primary-background-color);
-    font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
-    font-family: var(--heading-font);
+  color: var(--primary-background-color);
+  font-size: clamp(var(--nav-mobile-size), 5vw, var(--navigation-size));
+  font-family: var(--heading-font);
 }
-
 
 /* Landingpage Costumers */
 .costumers-landingpage > h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .costumers-landingpage > .teaser {
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
-    font-family: var(--heading-font);
-    color: var(--KC-orange);
+  font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+  font-family: var(--heading-font);
+  color: var(--KC-orange);
 }
 
-.costumers-landingpage > .teaser > span{
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    font-family: var(--body-font);
-    color: var(--KC-orange);
+.costumers-landingpage > .teaser > p > span {
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-family: var(--body-font);
+  color: var(--KC-orange);
 }
 
 /* Costumers Page Section */
 .bg-2 > p {
-    font-size: clamp(1.5rem, 5vw, 3rem);
-    font-family: var(--heading-font);
-    color: var(--KC-orange);
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-family: var(--heading-font);
+  color: var(--KC-orange);
 }
 
-.costumers-grid > .list > ul > li{
-    font-family: var(--body-font);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    color: var(--text-color);
-    line-height: 2;
+.costumers-grid > .list > ul > li {
+  font-family: var(--body-font);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  color: var(--text-color);
+  line-height: 2;
 }
 
 /* Contact Page */
 .contact-landingpage > .teaser > p {
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
-    font-family: var(--heading-font);
-    color: var(--KC-orange);
+  font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+  font-family: var(--heading-font);
+  color: var(--KC-orange);
 }
 
 .contact-container form .button {
-    color: var(--primary-background-color);
-    font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
-    font-family: var(--heading-font);
+  color: var(--primary-background-color);
+  font-size: clamp(var(--nav-mobile-size), 3vw, var(--navigation-size));
+  font-family: var(--heading-font);
 }
 
 .title-select {
-    color: var(--text-color);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    font-family: var(--body-font)
+  color: var(--text-color);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-family: var(--body-font);
 }
 
 .title-select option {
-    color: var(--text-color);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    font-family: var(--body-font);
-    opacity: 0.6;
+  color: var(--text-color);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-family: var(--body-font);
+  opacity: 0.6;
 }
 
-.contact-container form input, textarea {
-    color: var(--text-color);
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    font-family: var(--body-font);
+.contact-container form input,
+textarea {
+  color: var(--text-color);
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-family: var(--body-font);
 }
 
 elect::-webkit-input-placeholder {
-    color: #39393943;
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    font-family: var(--body-font);
+  color: #39393943;
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-family: var(--body-font);
 }
 
 select::-moz-placeholder {
-    color: #39393943;
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    font-family: var(--body-font);
+  color: #39393943;
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-family: var(--body-font);
 }
 
 select:-ms-input-placeholder {
-    color: #39393943;
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    font-family: var(--body-font);
+  color: #39393943;
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-family: var(--body-font);
 }
 
 select::-ms-input-placeholder {
-    color: #39393943;
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    font-family: var(--body-font);
+  color: #39393943;
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-family: var(--body-font);
+}
+
+select::-webkit-input-placeholder {
+  color: #39393943;
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-family: var(--body-font);
 }
 
 select::placeholder {
-    color: #39393943;
-    font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
-    font-family: var(--body-font);
+  color: #39393943;
+  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-family: var(--body-font);
 }
 
 .error {
-    color: var(--KC-orange);
-    font-size: clamp(var(--blocktext-mobile-size), 2vw, var(--blocktext-size));
-    font-family: var(--body-font);
+  color: var(--KC-orange);
+  font-size: clamp(var(--blocktext-mobile-size), 2vw, var(--blocktext-size));
+  font-family: var(--body-font);
 }
 
 .success {
-    color: var(--KC-orange);
-    font-size: clamp(var(--blocktext-mobile-size), 2vw, var(--blocktext-size));
-    font-family: var(--body-font);
+  color: var(--KC-orange);
+  font-size: clamp(var(--blocktext-mobile-size), 2vw, var(--blocktext-size));
+  font-family: var(--body-font);
 }
 
 .checkbox > div {
-    color: var(--text-color);
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    font-family: var(--body-font);
+  color: var(--text-color);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-family: var(--body-font);
 }
 
 /* imprint */
 .sources > p > span {
-    font-family: var(--bold-body-font);
+  font-family: var(--bold-body-font);
 }
 
 /* data protection */
 .data-protection-section > p > span {
-    font-family: var(--bold-body-font);
+  font-family: var(--bold-body-font);
 }
 
-
 /* Footer */
-ul > li > a > small{
-    font-family: var(--body-font);
-    font-size: 1.3rem;
-    color: var(--text-color);
-    line-height: 2;
+ul > li > a > small {
+  font-family: var(--body-font);
+  font-size: 1.3rem;
+  color: var(--text-color);
+  line-height: 2;
 }

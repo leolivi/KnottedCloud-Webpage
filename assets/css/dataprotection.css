@@ -1,23 +1,26 @@
 /* data protection */
 .data-protection-section {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: center;
-            justify-content: center;
-    padding: 10rem 15rem;
-    width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10rem 15rem;
+  width: 100%;
 }
 
 .data-protection-section > p {
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
 
 /* Responsive Data protection section */
-@media screen and (max-width:1200px) {
-    .data-protection-section {
-        padding: 10rem 2rem;
-    }
+@media screen and (max-width: 1200px) {
+  .data-protection-section {
+    padding: 10rem 2rem;
+  }
 }

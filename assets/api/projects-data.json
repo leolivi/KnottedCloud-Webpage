@@ -1,0 +1,86 @@
+[
+    {
+      "postId": 1,
+      "title": "Pink Macrame Wallhanging",
+      "body": "This wallhanging was made in 2020. The material used is cotton yarn, and raffia. The light raffia is plain, the darker one was naturally died with onion skins. This is the artists first project of this kind.",
+      "image": ["image-wallhanging-pink.webp", "image-wallhanging-pink.jpeg"],
+      "tags": ["macrame", "wallhanging", "pink", "raffia"]
+    },
+    {
+        "postId": 2,
+        "title": "Macrame pattern",
+        "body": "This macrame pattern was made in 2020. The material used is cotton yarn. This pattern was eventually used for a heat pad filled with cherry pits.",
+        "image": ["image-macrame-pattern-yellow.webp", "image-macrame-pattern-yellow.jpeg"],
+        "tags": ["macrame", "yellow"]
+    },
+    {
+        "postId": 3,
+        "title": "White Macrame Wallhanging",
+        "body": "This wallhanging was made in 2019. The material used is cotton yarn in a plain color, knotted with basic knots.",
+        "image": ["image-wallhanging-white.webp", "image-wallhanging-white.jpeg"],
+        "tags": ["macrame", "wallhanging", "white"]
+    },
+    {
+        "postId": 4,
+        "title": "Grey Macrame Wallhanging",
+        "body": "This wallhanging was made in 2021. The material used is cotton yarn, and raffia. The light raffia is plain, the darker one was naturally died with onion skins. This is the artists second project of this kind.",
+        "image": ["image-wallhanging-grey.webp", "image-wallhanging-grey.jpeg"],
+        "tags": ["macrame", "wallhanging", "grey", "raffia"]
+      },
+    {
+        "postId": 5,
+        "title": "Yellow Macrame Keychain",
+        "body": "This series of feather keychains was made in 2019. The material used is cotton yarn and the series contains multiply color options such as yellow, blue and green.",
+        "image": ["image-macrame-keychain.webp", "image-macrame-keychain.jpeg"],
+        "tags": ["macrame", "keychain", "yellow"]
+      },
+    {
+        "postId": 6,
+        "title": "Macrame Quartz Necklace",
+        "body": "This macrame quartz necklace was made in 2021. The material used is thin waxed green yarn and a rose quartz stone.",
+        "image": ["image-macrame-necklace-rose-quartz.webp", "image-macrame-necklace-rose-quartz.jpeg"],
+        "tags": ["macrame", "necklace", "green", "quartz"]
+      },
+    {
+        "postId": 7,
+        "title": "Macrame Jasper Necklace",
+        "body": "This macrame jasper necklace was made in 2022. The material used is thin waxed blue and orange yarn and jasper stones.",
+        "image": ["image-macrame-necklace-red-jasper.webp", "image-macrame-necklace-red-jasper.jpeg"],
+        "tags": ["macrame", "necklace", "blue", "orange", "jasper"]
+      },
+      {
+        "postId": 8,
+        "title": "Macrame Peridot Necklace",
+        "body": "This macrame peridot necklace was made in 2021. The material used is thin waxed grey yarn and perpostIdot stones.",
+        "image": ["image-macrame-necklace-peridot.webp", "image-macrame-necklace-peridot.jpeg"],
+        "tags": ["macrame", "necklace", "grey", "perpostIdot"]
+      },
+    {
+        "postId": 9,
+        "title": "Knitted Balaclava",
+        "body": "This balaclava was knitted in 2022. The material used is merino wool in grey, blue and green. The instructions were offered from a local knitting store in Berlin-Kreuzberg.",
+        "image": ["image-knitted-balaclava-Hector.webp", "image-knitted-balaclava-Hector.jpeg"],
+        "tags": ["knitwork", "balaclava", "grey", "green", "blue"]
+      },
+    {
+        "postId": 10,
+        "title": "Knotted Overknees",
+        "body": "These overknees were knitted in 2023. The material used is grey merino wool.",
+        "image": ["image-knitted-overknees-Leo.webp", "image-knitted-overknees-Leo.JPG"],
+        "tags": ["knitwork", "overknees", "grey", "socks"]
+      },
+    {
+        "postId": 11,
+        "title": "Knitted scarf",
+        "body": "This scarf was knitted in 2022. The material used is wool. It has a playful look with ruffle ends.",
+        "image": ["image-knitted-scarf-Leo.webp", "image-knitted-scarf-Leo.jpg"],
+        "tags": ["knitwork", "scarf", "red"]
+      },
+    {
+        "postId": 12,
+        "title": "Knitted Beanie",
+        "body": "This knitted beanie was made in 2022. The material used is pink merino wool.",
+        "image": ["image-knitted-beanie-Nadia.webp", "image-knitted-beanie-Nadia.jpg"],
+        "tags": ["knitwork", "beanie", "pink"]
+      }
+  ]

@@ -1,239 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
     <!-- links -->
-    <link rel="icon" type="image/svg+xml" href="assets/illustrations/icons/logo/KC-favicon.svg">
-    <link rel="icon" type="image/png" href="assets/illustrations/icons/logo/KC-favicon.png">
-    <link rel="stylesheet" href="assets/css/reset-variables.css">
-    <link rel="stylesheet" href="assets/css/typografie.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/projects.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
-</head>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/illustrations/icons/logo/KC-favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/illustrations/icons/logo/KC-favicon.png"
+    />
+    <link rel="stylesheet" href="assets/css/reset-variables.css" />
+    <link rel="stylesheet" href="assets/css/typografie.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="assets/javascript/projects.js" defer></script>
+    <script src="assets/javascript/buttons.js" defer></script>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header class="main-header projects">
-        <nav class="main-nav">
-            <a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark-no-background.svg" alt="Logo Icon to get to Homepage"></a>
-            <input type="checkbox" id="check" aria-hidden="true" aria-label="check this box to see menu">
-            <label for="check" class="check-bar">
-                <i class="fa-solid fa-bars fa-2x" id="menu-icon" ></i>
-                <i class="fa-solid fa-xmark fa-2x" id="close-icon"></i>
-            </label>
-            <ul class="main-nav-items">
-                <li><a href="index.html">home</a></li>
-                <li><a class="active" href="#">projects</a></li>
-                <li><a href="community.html">community</a></li>
-                <li><a href="customers.html">customers</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-        <div class="projects-landingpage">
-            <h1>Projects</h1>
-                <p class="teaser">Check out my latest crafts</p>
-                <i class="fa-solid fa-chevron-down fa-2x"></i>
-        </div>
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <a href="index.html"
+          ><img
+            src="assets/illustrations/icons/logo/KC-brandmark-no-background.svg"
+            alt="Logo Icon to get to Homepage"
+        /></a>
+        <button class="burger-icon">
+          <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+          <i class="fa-solid fa-xmark fa-2x" id="close-icon"></i>
+        </button>
+        <!-- Menu -->
+        <ul class="main-nav-items">
+          <li><a href="index.html">home</a></li>
+          <li><a class="active" href="#">projects</a></li>
+          <li><a href="community.html">community</a></li>
+          <li><a href="customers.html">customers</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <!-- Mobile Menu -->
+        <ul class="menu">
+          <li><a class="nav-item" href="index.html">home</a></li>
+          <li><a class="nav-item active" href="projects.html">projects</a></li>
+          <li><a class="nav-item" href="community.html">community</a></li>
+          <li><a class="nav-item" href="customers.html">customers</a></li>
+          <li><a class="nav-item" href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+      <!-- H1 and Teaser -->
+      <div class="projects-landingpage">
+        <h1>Projects</h1>
+        <button class="teaser">
+          <p>Check out my latest crafts</p>
+          <i class="fa-solid fa-chevron-down fa-2x"></i>
+        </button>
+      </div>
     </header>
     <!-- Gallery section / main contenct -->
     <main class="projects-section">
-        <h2>Gallery</h2>
-        <div class="projects-image-container">
-
-            <div>
-                <img src="assets/images/image-wallhanging-pink.jpeg" srcset="assets/images/image-wallhanging-pink.webp" alt="handmade pink macrame wallhanging with raffia details">
-                <div class="desc">
-                    <p>Macrame Wallhanging, 2020</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
+      <h2>Gallery</h2>
+      <!-- Blog post container -->
+      <div class="projects-image-container">
+        <!-- <div class="blog-post">
+            <img src="assets/images/${blogPost.image[1]}" srcset="assets/images/${blogPost.image[0]}" alt="handmade pink macrame wallhanging with raffia details">
+            <div class="desc" style="background-color: transparent;">
+                <p style="opacity: 0;">${blogPost.title}</p>
+                <img class="info-icon" onmouseover="displayInfo(this)" onclick="displayInfo(this)" onmouseleave="removeInfo(this)" src="assets/icons/icon-info-cloud-desktop.svg" alt="click here to see picture blogpostTitleribtion">
             </div>
+            <div class="desc-text" style="display: none;">${blogPost.body}</div>
+        </div> -->
+      </div>
 
-            <div>
-                <img src="assets/images/image-macrame-pattern-yellow.jpeg" srcset="assets/images/image-macrame-pattern-yellow.webp" alt="handmade macrame pattern with yellow yarn">
-                <div class="desc">
-                    <p>Macrame pattern, 2020</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/images/image-wallhanging-white.jpeg" srcset="assets/images/image-wallhanging-white.webp" alt="handmade white macrame wallhanging">
-                <div class="desc">
-                    <p>Macrame Wallhanging, 2019</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/images/image-wallhanging-grey.jpeg" srcset="assets/images/image-wallhanging-grey.webp" alt="handmade grey macrame wallhanging with raffia details">
-                <div class="desc">
-                    <p>Macrame Wallhanging, 2021</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/images/image-macrame-keychain.jpeg" srcset="assets/images/image-macrame-keychain.webp" alt="handmade yellow macrame keychain in a feather shape">
-                <div class="desc">
-                    <p>Macrame Keychain, 2019</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/images/image-macrame-necklace-rose-quartz.jpeg" srcset="assets/images/image-macrame-necklace-rose-quartz.webp" alt="handmade Macrame Quartz Necklace">
-                <div class="desc">
-                    <p>Macrame Quartz Necklace, 2021</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/images/image-macrame-necklace-red-jasper.jpeg" srcset="assets/images/image-macrame-necklace-red-jasper.webp" alt="handmade Macrame Jasper Necklace">
-                <div class="desc">
-                    <p>Macrame Jasper Necklace, 2022</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/images/image-macrame-necklace-peridot.jpeg" srcset="assets/images/image-macrame-necklace-peridot.webp" alt="handmade Macrame Peridot Necklace">
-                <div class="desc">
-                    <p>Macrame Peridot Necklace, 2021</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/images/image-knitted-balaclava-Hector.jpeg" srcset="assets/images/image-knitted-balaclava-Hector.webp" alt="handmade Knitted Balaclava">
-                <div class="desc">
-                    <p>Knitted Balaclava, 2022</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/images/image-knitted-overknees-Leo.JPG" srcset="assets/images/image-knitted-overknees-Leo.webp" alt="handmade knitted Overknee Socks">
-                <div class="desc">
-                    <p>Knitted Overknees, 2023</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/images/image-knitted-scarf-Leo.jpg" srcset="assets/images/image-knitted-scarf-Leo.webp" alt="handmade Knitted Scarf">
-                <div class="desc">
-                    <p>Knitted Scarf, 2022</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/images/image-knitted-beanie-Nadia.jpg" srcset="assets/images/image-knitted-beanie-Nadia.webp" alt="handmade knitted beanie">
-                <div class="desc">
-                    <p>Knitted Beanie, 2022</p>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture describtion">
-                </div>
-            </div>
-
-        </div>
-
-        <p class="infotext">
-            <img src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="Button to scroll to top">
-            My crafts are purchasable on Etsy.
-        </p>
-        <a href="https://www.etsy.com/shop/KnottedCloud" target="_blank" class="Etsy-Link">Visit my store!</a>
+      <!-- Etsy Infotext -->
+      <p class="infotext">
+        <img
+          src="assets/illustrations/icons/icon-info-cloud-desktop.svg"
+          alt="Button to scroll to top"
+        />
+        My crafts are purchasable on Etsy.
+      </p>
+      <a
+        href="https://www.etsy.com/shop/KnottedCloud"
+        target="_blank"
+        class="Etsy-Link"
+        >Visit my store!</a
+      >
     </main>
     <!-- Footer -->
     <footer class="main-footer">
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark.svg"
-                            alt="Get to Homepage"></a></li>
-                <li>
-                    <ul class="legal">
-                        <li><a href="imprint.html"><small>imprint</small></a></li>
-                        <li><a href="dataprotection.html"><small>data protection</small></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="contact-icons">
-                        <li>
-                            <a href="mailto:knottedcloud@outlook.com" aria-label="click this icon to write me an email">
-                                <i class="fa-regular fa-envelope fa-2x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.etsy.com/shop/KnottedCloud" target="_blank" aria-label="click this icon to get to my Etsy shop">
-                                <i class="fa-brands fa-etsy fa-2x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/knottedcloud/" target="_blank" aria-label="click this icon to get to my Instagram page">
-                                <i class="fa-brands fa-instagram fa-2x"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+      <nav class="footer-nav">
+        <ul>
+          <!-- Logo / HP Button -->
+          <li>
+            <a href="index.html"
+              ><img
+                src="assets/illustrations/icons/logo/KC-brandmark.svg"
+                alt="Get to Homepage"
+            /></a>
+          </li>
+          <!-- Legal section -->
+          <li>
+            <ul class="legal">
+              <li>
+                <a href="imprint.html"><small>imprint</small></a>
+              </li>
+              <li>
+                <a href="dataprotection.html"><small>data protection</small></a>
+              </li>
             </ul>
-        </nav>
+          </li>
+          <!-- Icons section -->
+          <li>
+            <ul class="contact-icons">
+              <li>
+                <a
+                  href="mailto:knottedcloud@outlook.com"
+                  aria-label="click this icon to write me an email"
+                >
+                  <i class="fa-regular fa-envelope fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.etsy.com/shop/KnottedCloud"
+                  target="_blank"
+                  aria-label="click this icon to get to my Etsy shop"
+                >
+                  <i class="fa-brands fa-etsy fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/knottedcloud/"
+                  target="_blank"
+                  aria-label="click this icon to get to my Instagram page"
+                >
+                  <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </footer>
     <!-- Scroll to top button -->
     <div class="scroll-to-top-button">
-        <button onclick="topFunction()" id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
+      <button id="sttB" title="Go to top">
+        <img
+          class="light-mode"
+          src="assets/illustrations/icons/button-scroll-to-top.svg"
+          alt="Scroll to top"
+        />
+      </button>
     </div>
-
-    <script>
-        // Scroll to top button
-        let mybutton = document.getElementById("sttB")
-
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
-
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-    </script>
-
-</body>
-
+  </body>
 </html>

@@ -1,192 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customers</title>
     <!-- links -->
-    <link rel="icon" type="image/svg+xml" href="assets/illustrations/icons/logo/KC-favicon.svg">
-    <link rel="icon" type="image/png" href="assets/illustrations/icons/logo/KC-favicon.png">
-    <link rel="stylesheet" href="assets/css/reset-variables.css">
-    <link rel="stylesheet" href="assets/css/typografie.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/costumers.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/illustrations/icons/logo/KC-favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/illustrations/icons/logo/KC-favicon.png"
+    />
+    <link rel="stylesheet" href="assets/css/reset-variables.css" />
+    <link rel="stylesheet" href="assets/css/typografie.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/costumers.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="assets/javascript/buttons.js" defer></script>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header class="main-header costumers">
-        <nav class="main-nav">
-            <a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark-no-background.svg" alt="Logo Icon to get to Homepage"></a>
-            <input type="checkbox" id="check" aria-hidden="true" aria-label="check this box to see menu">
-            <label for="check" class="check-bar">
-                <i class="fa-solid fa-bars fa-2x" id="menu-icon" ></i>
-                <i class="fa-solid fa-xmark fa-2x" id="close-icon"></i>
-            </label>
-            <ul class="main-nav-items">
-                <li><a href="index.html">home</a></li>
-                <li><a href="projects.html">projects</a></li>
-                <li><a href="community.html">community</a></li>
-                <li><a class="active" href="#">customers</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-        <div class="costumers-landingpage">
-            <h1>To my lovely customers</h1>
-            <p class="teaser">Thanks a lot for your support!<br>
-                <span>Here you will learn how to care for knitted clothes and make them last as long as
-                    possible</span>
-            </p>
-            <i class="fa-solid fa-chevron-down fa-2x"></i>
-        </div>
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <a href="index.html"
+          ><img
+            src="assets/illustrations/icons/logo/KC-brandmark-no-background.svg"
+            alt="Logo Icon to get to Homepage"
+        /></a>
+        <button class="burger-icon">
+          <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+          <i class="fa-solid fa-xmark fa-2x" id="close-icon"></i>
+        </button>
+        <!-- Menu -->
+        <ul class="main-nav-items">
+          <li><a href="index.html">home</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="community.html">community</a></li>
+          <li><a class="active" href="#">customers</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <!-- Mobile Menu -->
+        <ul class="menu">
+          <li><a class="nav-item" href="index.html">home</a></li>
+          <li><a class="nav-item" href="projects.html">projects</a></li>
+          <li><a class="nav-item" href="community.html">community</a></li>
+          <li>
+            <a class="nav-item active" href="customers.html">customers</a>
+          </li>
+          <li><a class="nav-item" href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+      <!-- H1 and Teaser -->
+      <div class="costumers-landingpage">
+        <h1>To my lovely customers</h1>
+        <button class="teaser">
+          <p>
+            Thanks a lot for your support!<br />
+            <span
+              >Here you will learn how to care for knitted clothes and make them
+              last as long as possible</span
+            >
+          </p>
+          <i class="fa-solid fa-chevron-down fa-2x"></i>
+        </button>
+      </div>
     </header>
     <!-- costumers section -->
     <section class="costumers-section">
-        <div class="costumers-grid">
-
-            <div class="bg-1">
-                <div class="bg-2">
-                    <h2>Washing at</h2>
-                    <img class="washing-image" src="assets/illustrations/icons/icon-wash-30.png" alt="Washing at 30 degrees">
-                </div>
-            </div>
-            <div class="list margin">
-                <ul>
-                    <li>
-                        <img src="assets/illustrations/icons/cloud-orange-60.svg" alt="Bullet point in form of a cloud">
-                        Use a gentle wash program for delicates / wool
-                    </li>
-                    <li>
-                        <img src="assets/illustrations/icons/cloud-orange-60.svg" alt="Bullet point in form of a cloud">
-                        Use a mild detergent or wool detergent
-                    </li>
-                    <li>
-                        <img src="assets/illustrations/icons/cloud-orange-60.svg" alt="Bullet point in form of a cloud">
-                        Turn garment inside out to protect delicate knit details
-                    </li>
-                    <li>
-                        <img src="assets/illustrations/icons/cloud-orange-60.svg" alt="Bullet point in form of a cloud">
-                        Place the garment in a laundry bag to avoid friction during the wash cycle
-                    </li>
-                    <li>
-                        <img src="assets/illustrations/icons/cloud-orange-60.svg" alt="Bullet point in form of a cloud">
-                        Select a low spin speed to reduce stretching of the knitwear
-                    </li>
-                    <li>
-                        <img src="assets/illustrations/icons/cloud-orange-60.svg" alt="Bullet point in form of a cloud">
-                        Wring out gently after washing
-                    </li>
-                </ul>
-            </div>
-
-            <div class="margin text">
-                <p>Follow the steps as described above for 30 degrees.
-                    <br><br>However, make sure the garment is machine washable at 40 degrees, as not all hand-knitted
-                    materials tolerate heat well!
-                    <br>Check the instructions on your purchase or reach out to me if you're unsure.
-                </p>
-            </div>
-            <div class="bg-1">
-                <div class="bg-2">
-                    <h2>Washing at</h2>
-                    <img class="washing-image" src="assets/illustrations/icons/icon-wash-40.png" alt="Washing at 40 degrees">
-                </div>
-            </div>
-
-            <div class="bg-1">
-                <div class="bg-2">
-                    <h2>Drying</h2>
-                    <img class="tumble-dry-img" src="assets/illustrations/icons/icon-dryer.png" alt="Don't tumble dry sign">
-                </div>
-            </div>
-            <div class="list">
-                <ul>
-                    <li>
-                        <img src="assets/illustrations/icons/cloud-orange-60.svg" alt="Bullet point in form of a cloud">
-                        Avoid using a tumble dryer! The heat and spinning will damage the knitted material and it may
-                        shrink
-                    </li>
-                    <li>
-                        <img src="assets/illustrations/icons/cloud-orange-60.svg" alt="Bullet point in form of a cloud">
-                        Hand-knitted garments should preferably be dried flat to maintain their shape and prevent
-                        warping
-                    </li>
-                    <li>
-                        <img src="assets/illustrations/icons/cloud-orange-60.svg" alt="Bullet point in form of a cloud">
-                        Lay out the washed garment and shape it as desired
-                    </li>
-                    <li>
-                        <img src="assets/illustrations/icons/cloud-orange-60.svg" alt="Bullet point in form of a cloud">
-                        Let it air dry by spreading it out flat on a clothes rack or towel. Avoid direct sunlight to
-                        prevent discoloration
-                    </li>
-                </ul>
-            </div>
-
+      <!-- Customers Grid -->
+      <div class="costumers-grid">
+        <!-- First Section -->
+        <!-- Square Bckground -->
+        <div class="bg-1">
+          <div class="bg-2">
+            <h2>Washing at</h2>
+            <img
+              class="washing-image"
+              src="assets/illustrations/icons/icon-wash-30.png"
+              alt="Washing at 30 degrees"
+            />
+          </div>
         </div>
+        <!-- Information -->
+        <div class="list margin">
+          <ul>
+            <li>
+              <img
+                src="assets/illustrations/icons/cloud-orange-60.svg"
+                alt="Bullet point in form of a cloud"
+              />
+              Use a gentle wash program for delicates / wool
+            </li>
+            <li>
+              <img
+                src="assets/illustrations/icons/cloud-orange-60.svg"
+                alt="Bullet point in form of a cloud"
+              />
+              Use a mild detergent or wool detergent
+            </li>
+            <li>
+              <img
+                src="assets/illustrations/icons/cloud-orange-60.svg"
+                alt="Bullet point in form of a cloud"
+              />
+              Turn garment inside out to protect delicate knit details
+            </li>
+            <li>
+              <img
+                src="assets/illustrations/icons/cloud-orange-60.svg"
+                alt="Bullet point in form of a cloud"
+              />
+              Place the garment in a laundry bag to avoid friction during the
+              wash cycle
+            </li>
+            <li>
+              <img
+                src="assets/illustrations/icons/cloud-orange-60.svg"
+                alt="Bullet point in form of a cloud"
+              />
+              Select a low spin speed to reduce stretching of the knitwear
+            </li>
+            <li>
+              <img
+                src="assets/illustrations/icons/cloud-orange-60.svg"
+                alt="Bullet point in form of a cloud"
+              />
+              Wring out gently after washing
+            </li>
+          </ul>
+        </div>
+
+        <!-- Second Section -->
+        <!-- Information -->
+        <div class="margin text">
+          <p>
+            Follow the steps as described above for 30 degrees.
+            <br /><br />However, make sure the garment is machine washable at 40
+            degrees, as not all hand-knitted materials tolerate heat well!
+            <br />Check the instructions on your purchase or reach out to me if
+            you're unsure.
+          </p>
+        </div>
+        <!-- Square background -->
+        <div class="bg-1">
+          <div class="bg-2">
+            <h2>Washing at</h2>
+            <img
+              class="washing-image"
+              src="assets/illustrations/icons/icon-wash-40.png"
+              alt="Washing at 40 degrees"
+            />
+          </div>
+        </div>
+
+        <!-- Third Section -->
+        <!-- Square Background -->
+        <div class="bg-1">
+          <div class="bg-2">
+            <h2>Drying</h2>
+            <img
+              class="tumble-dry-img"
+              src="assets/illustrations/icons/icon-dryer.png"
+              alt="Don't tumble dry sign"
+            />
+          </div>
+        </div>
+        <!-- Information -->
+        <div class="list">
+          <ul>
+            <li>
+              <img
+                src="assets/illustrations/icons/cloud-orange-60.svg"
+                alt="Bullet point in form of a cloud"
+              />
+              Avoid using a tumble dryer! The heat and spinning will damage the
+              knitted material and it may shrink
+            </li>
+            <li>
+              <img
+                src="assets/illustrations/icons/cloud-orange-60.svg"
+                alt="Bullet point in form of a cloud"
+              />
+              Hand-knitted garments should preferably be dried flat to maintain
+              their shape and prevent warping
+            </li>
+            <li>
+              <img
+                src="assets/illustrations/icons/cloud-orange-60.svg"
+                alt="Bullet point in form of a cloud"
+              />
+              Lay out the washed garment and shape it as desired
+            </li>
+            <li>
+              <img
+                src="assets/illustrations/icons/cloud-orange-60.svg"
+                alt="Bullet point in form of a cloud"
+              />
+              Let it air dry by spreading it out flat on a clothes rack or
+              towel. Avoid direct sunlight to prevent discoloration
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!-- Footer -->
     <footer class="main-footer">
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark.svg"
-                            alt="Get to Homepage"></a></li>
-                <li>
-                    <ul class="legal">
-                        <li><a href="imprint.html"><small>imprint</small></a></li>
-                        <li><a href="dataprotection.html"><small>data protection</small></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="contact-icons">
-                        <li>
-                            <a href="mailto:knottedcloud@outlook.com" aria-label="click this icon to write me an email">
-                                <i class="fa-regular fa-envelope fa-2x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.etsy.com/shop/KnottedCloud" target="_blank" aria-label="click this icon to get to my Etsy shop">
-                                <i class="fa-brands fa-etsy fa-2x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/knottedcloud/" target="_blank" aria-label="click this icon to get to my Instagram page">
-                                <i class="fa-brands fa-instagram fa-2x"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+      <nav class="footer-nav">
+        <ul>
+          <!-- Logo / HP Button -->
+          <li>
+            <a href="index.html"
+              ><img
+                src="assets/illustrations/icons/logo/KC-brandmark.svg"
+                alt="Get to Homepage"
+            /></a>
+          </li>
+          <!-- Legal section -->
+          <li>
+            <ul class="legal">
+              <li>
+                <a href="imprint.html"><small>imprint</small></a>
+              </li>
+              <li>
+                <a href="dataprotection.html"><small>data protection</small></a>
+              </li>
             </ul>
-        </nav>
+          </li>
+          <!-- Icons section -->
+          <li>
+            <ul class="contact-icons">
+              <li>
+                <a
+                  href="mailto:knottedcloud@outlook.com"
+                  aria-label="click this icon to write me an email"
+                >
+                  <i class="fa-regular fa-envelope fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.etsy.com/shop/KnottedCloud"
+                  target="_blank"
+                  aria-label="click this icon to get to my Etsy shop"
+                >
+                  <i class="fa-brands fa-etsy fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/knottedcloud/"
+                  target="_blank"
+                  aria-label="click this icon to get to my Instagram page"
+                >
+                  <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </footer>
     <!-- Scroll to top button -->
     <div class="scroll-to-top-button">
-        <button onclick="topFunction()" id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
+      <button id="sttB" title="Go to top">
+        <img
+          class="light-mode"
+          src="assets/illustrations/icons/button-scroll-to-top.svg"
+          alt="Scroll to top"
+        />
+      </button>
     </div>
-
-    <script>
-        // Scroll to top button
-        let mybutton = document.getElementById("sttB")
-
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
-
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-    </script>
-
-</body>
+  </body>
+</html>

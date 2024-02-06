@@ -13,20 +13,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
     <script src="assets/javascript/contact.js" defer></script>
+    <script src="assets/javascript/buttons.js" defer></script>
 </head>
 
 <body>
     <!-- Header -->
     <header class="main-header contact">
+        <!-- Navigation -->
         <nav class="main-nav">
             <a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark-no-background.svg" alt="Logo Icon to get to Homepage"></a>
-            <input type="checkbox" id="check" aria-hidden="true" aria-label="check this box to see menu">
-            <label for="check" class="check-bar">
+            <button class="burger-icon">
                 <i class="fa-solid fa-bars fa-2x" id="menu-icon" ></i>
                 <i class="fa-solid fa-xmark fa-2x" id="close-icon"></i>
-            </label>
+            </button>
+            <!-- Menu -->
             <ul class="main-nav-items">
                 <li><a href="index.html">home</a></li>
                 <li><a href="projects.html">projects</a></li>
@@ -34,13 +35,22 @@
                 <li><a href="customers.html">customers</a></li>
                 <li><a class="active" href="#">contact</a></li>
             </ul>
+            <!-- Mobile Menu -->
+            <ul class="menu">
+                <li><a class="nav-item" href="index.html">home</a></li>
+                <li><a class="nav-item" href="projects.html">projects</a></li>
+                <li><a class="nav-item" href="community.html">community</a></li>
+                <li><a class="nav-item" href="customers.html">customers</a></li>
+                <li><a class="nav-item active" href="contact.html">contact</a></li>
+            </ul>  
         </nav>
+        <!-- H1 and Teaser -->
         <div class="contact-landingpage">
             <h1>Get in <br> <span>touch!</span></h1>
-            <div class="teaser">
+            <button class="teaser">
                 <p>Email me or complete this form</p>
                 <i class="fa-solid fa-chevron-down fa-2x"></i>
-            </div>
+            </button>
         </div>
     </header>
     <!-- Contact section -->
@@ -48,6 +58,7 @@
         <h2>Contact me</h2>
         <p>Whether you wanna join our community, are interested in my work or anything else, I'd love to hear from you! Fill out this form and we'll be in touch with you as soon as possible:</p>
         <div class="contact-container">
+            <!-- Contact Form -->
             <form action="#">
                 <!-- <select name="title" id=title-select" class="title-select" required>
                     <option value="">--Choose your title--<i class="fa-solid fa-chevron-down"></i></option>
@@ -58,9 +69,11 @@
                     <option value="X">Prefer not to say</option>
                 </select> -->
 
+            <!-- First Name -->
                 <label for="first-name"></label>
                 <input type="text" name="firstname" id="first-name" placeholder="first name" required aria-label="Your first name">
 
+            <!-- Last Name -->
                 <label for="last-name"></label>
                 <input type="text" name="lastname" id="last-name" placeholder="last name" required aria-label="Your last name">
 
@@ -73,19 +86,24 @@
                 <label for="city"></label>
                 <input type="text" name="city" id="city" placeholder="city" required aria-label="Your city"> -->
 
+            <!-- Email -->
                 <label for="email"></label>
                 <input type="email" name="e-mail" id="email" placeholder="e-mail" required aria-label="Your Email Address">
 
+            <!-- Message -->
                 <label for="message"></label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required aria-label="Your Message"></textarea>
                 
+            <!-- Checkbox -->
                 <label class="checkbox">
                     <input type="checkbox" id="box" class="box" required>
                     <div>I have read the <a href="dataprotection.html" target="_blank">data protection policy</a> and agree.</div>
                 </label>
 
+                <!-- Success Message -->
                 <div id="successMessage" class="success" style="display: none; margin-top: 1rem;">Thank you for your Message!</div>
-
+            
+            <!-- Submit Button -->
                 <input id="submit" type="submit" value="send" class="button" aria-label="Send">
 
             </form>
@@ -95,14 +113,18 @@
     <footer class="main-footer">
         <nav class="footer-nav">
             <ul>
+                <!-- Logo / HP Button -->
                 <li><a href="index.html"><img src="assets/illustrations/icons/logo/KC-brandmark.svg"
-                            alt="Get to Homepage"></a></li>
+                            alt="Get to Homepage"></a>
+                </li>
+                <!-- Legal section -->
                 <li>
                     <ul class="legal">
                         <li><a href="imprint.html"><small>imprint</small></a></li>
                         <li><a href="dataprotection.html"><small>data protection</small></a></li>
                     </ul>
                 </li>
+                <!-- Icons section -->
                 <li>
                     <ul class="contact-icons">
                         <li>
@@ -127,29 +149,6 @@
     </footer>
     <!-- Scroll to top button -->
     <div class="scroll-to-top-button">
-        <button onclick="topFunction()" id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
+        <button id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
     </div>
-
-    <script>
-        // Scroll to top button
-        let mybutton = document.getElementById("sttB")
-
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
-
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-    </script>
-
 </body>
