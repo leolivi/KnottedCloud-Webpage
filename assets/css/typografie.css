@@ -15,12 +15,6 @@
 }
 
 /* Headings and Fonts */
-/* h1 {
-    font-family: var(--heading-font);
-    font-size: clamp(4rem, 10vw, 9.375rem);
-    line-height: 1.5;
-    color: var(--KC-orange);
-} */
 
 h1 {
   font-family: var(--heading-font);
@@ -120,7 +114,7 @@ p {
 .projects-h3 {
   color: var(--text-color);
   font-family: var(--bold-body-font);
-  font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
+  font-size: clamp(1rem, 3vw, var(--blocktext-size));
 }
 
 .desc-text {
@@ -225,7 +219,7 @@ textarea {
   font-family: var(--body-font);
 }
 
-elect::-webkit-input-placeholder {
+select::-webkit-input-placeholder {
   color: #39393943;
   font-size: clamp(var(--blocktext-mobile-size), 3vw, var(--blocktext-size));
   font-family: var(--body-font);
@@ -290,7 +284,7 @@ select::placeholder {
 }
 
 /* Footer */
-ul > li > a > small {
+small {
   font-family: var(--body-font);
   font-size: 1.3rem;
   color: var(--text-color);
