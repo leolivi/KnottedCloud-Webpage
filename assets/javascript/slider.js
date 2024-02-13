@@ -7,29 +7,21 @@ const interval = 3000;
 let intervalId;
 
 // select two buttons and add event listener
-document
-  .querySelector(".controls-container .left")
-  .addEventListener("click", () => {
+const leftArrow = document.querySelector(".controls-container .left")
+leftArrow.addEventListener("click", () => {
     moveLeft();
-    pauseAutoplay();
-    // clearInterval();
-  });
-document
-  .querySelector(".controls-container .right")
-  .addEventListener("click", () => {
+    // console.log("left")
+    // pauseAutoplay();
+    clearInterval();
+});
+
+const rightArrow = document.querySelector(".controls-container .right")
+rightArrow.addEventListener("click", () => {
     moveRight();
-    pauseAutoplay();
-    // clearInterval();
-  });
-
-// select play and pause buttons and add event listener
-document
-  .querySelector(".controls-container .pause")
-  .addEventListener("click", pauseAutoplay);
-
-document
-  .querySelector(".controls-container .play")
-  .addEventListener("click", startAutoplay);
+    // console.log("right")
+    // pauseAutoplay();
+    clearInterval();
+});
 
 // function to move the picture
 function moveRight() {
@@ -38,7 +30,6 @@ function moveRight() {
   // take first element and append it
   const firstSlide = document.querySelectorAll(".slide")[0];
   sliderContainer.append(firstSlide);
-  // sliderContainer.style.scrollBehavior = "smooth";
   // restart autoplay
   startAutoplay();
 };
@@ -51,6 +42,13 @@ function moveLeft() {
   sliderContainer.prepend(lastSlide);
   startAutoplay();
 }
+
+// select play and pause buttons and add event listener
+const pauseButton = document.querySelector(".controls-container .pause")
+pauseButton.addEventListener("click", pauseAutoplay);
+
+const playButton = document.querySelector(".controls-container .play")
+playButton.addEventListener("click", startAutoplay);
 
 // function for starting autoplay
 function startAutoplay() {

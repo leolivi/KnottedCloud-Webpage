@@ -618,8 +618,8 @@
   -webkit-transition: 0.5s opacity linear;
   -o-transition: 0.5s opacity linear;
   transition: 0.5s opacity linear;
-  /* -ms-scroll-snap-type: x proximity;
-  scroll-snap-type: x proximity; */
+  -ms-scroll-snap-type: x proximity;
+  scroll-snap-type: x proximity;
 }
 
 .slide:nth-child(4) {
@@ -648,10 +648,10 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  z-index: -10;
+  z-index: 0;
 }
 
-.controls-container .arrow,
+.controls-container > .arrow,
 .pause,
 .play {
   color: var(--KC-orange);
