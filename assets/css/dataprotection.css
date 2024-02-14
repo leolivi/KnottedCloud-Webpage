@@ -24,3 +24,9 @@
     padding: 10rem 2rem;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .data-protection-section {
+    padding: 5rem 2rem;
+  }
+}

@@ -363,7 +363,7 @@
 /* Responsive Community section */
 @media screen and (max-width: 850px) {
   .community-section {
-    padding: 10rem 2rem 0rem 2em;
+    padding: 5rem 2rem 0rem 2em;
   }
 
   .community-section h2 {

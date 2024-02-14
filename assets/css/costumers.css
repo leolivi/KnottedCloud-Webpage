@@ -332,6 +332,10 @@
 }
 
 @media (max-width: 850px) {
+  .costumers-section {
+    padding: 5rem 2rem 10rem;
+  }
+
   .costumers-grid {
     display: -ms-grid;
     display: grid;
@@ -339,5 +343,3 @@
     grid-template-columns: 1fr;
   }
 }
-
-/* ab 927px screen untereinander platzieren */

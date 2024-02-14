@@ -273,19 +273,29 @@
         // Burger Icon
         const menu = document.querySelector(".menu");
         const navItems = document.querySelectorAll(".menu-item");
-        const hamburger= document.querySelector(".burger-icon");
-        const closeIcon= document.querySelector("#close-icon");
+        const hamburger = document.querySelector(".burger-icon");
+        const closeIcon = document.querySelector("#close-icon");
         const menuIcon = document.querySelector("#menu-icon");
 
+        // const desktopNav = document.querySelector('.main-nav-items')
+
+        // toggle icons for mobile nav
         function toggleMenu() {
         if (menu.classList.contains("showMenu")) {
             menu.classList.remove("showMenu");
             closeIcon.style.display = "none";
             menuIcon.style.display = "block";
+            // remove fixating element when scrolling
+            document.body.style.position = "";
+            // desktopNav.style.display ="none";
         } else {
+            // display mobile menu
             menu.classList.add("showMenu");
             closeIcon.style.display = "block";
             menuIcon.style.display = "none";
+            // fixate element when scrolling
+            document.body.style.position = "fixed";
+            // desktopNav.style.display ="flex";
         }
         }
 

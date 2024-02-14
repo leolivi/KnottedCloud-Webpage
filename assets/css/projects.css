@@ -463,7 +463,7 @@
 
 @media screen and (max-width: 850px) {
   .projects-section {
-    padding: 10rem 2rem;
+    padding: 5rem 2rem 10rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

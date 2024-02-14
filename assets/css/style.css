@@ -350,7 +350,7 @@
   }
 
   .menu {
-    background-position: 3vw -12vh;
+    background-position: 3vw -63vh;
     background-size: 100%;
   }
 }
@@ -358,7 +358,7 @@
 @media screen and (max-height: 915px) {
   .main-nav .main-nav-items {
     background-size: 102%;
-    background-position: -1vw 1vh;
+    background-position: -1vw -53vh;
   }
 
   .menu {
@@ -429,7 +429,7 @@
   }
 
   .menu {
-    background-position: 0vw -8vh;
+    background-position: 0vw -16vh;
   }
 }
 
@@ -465,7 +465,7 @@
   }
 
   .menu {
-    background-position: 3vw 9vh;
+    background-position: 3vw 0vh;
     background-size: 90%;
   }
 }
@@ -726,6 +726,12 @@
     -webkit-transform: translateX(-335px);
     -ms-transform: translateX(-335px);
     transform: translateX(-335px);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    margin: 5rem 0 0;
   }
 }
 
