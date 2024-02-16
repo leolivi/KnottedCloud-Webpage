@@ -53,7 +53,7 @@ playButton.addEventListener("click", startAutoplay);
 // function for starting autoplay
 function startAutoplay() {
   intervalId = setInterval(() => {
-    moveRight();
+      moveRight();    
   }, interval);
   document.querySelector(".pause").style.display = "block";
   document.querySelector(".play").style.display = "none";
@@ -61,6 +61,7 @@ function startAutoplay() {
 
 // function for pausing autoplay
 function pauseAutoplay() {
+  // no error handling necessary here
   clearInterval(intervalId);
   document.querySelector(".pause").style.display = "none";
   document.querySelector(".play").style.display = "block";

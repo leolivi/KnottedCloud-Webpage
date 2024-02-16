@@ -2,12 +2,22 @@
 getData();
 
 async function getData() {
-  // get data from json file
-  const response = await fetch("assets/api/projects-data.json");
-  const data = await response.json();
-
-  // muss ausgeführt werden!
-  displayPosts(data);
+  try {
+    // get data from json file
+      const response = await fetch('assets/api/projects-data.json');
+      // handle HTTP relatet issues (status code not in range 200-299)
+      if (!(response.status >= 200 && response.status < 300)) {
+        throw new Error(`Error occurred in HTTP path. Status code: ${response.status}`);
+      }
+      const data = await response.json();
+      // unten stehende Funktion displayPosts() muss ausgeführt werden
+      displayPosts(data);
+  } catch (error) {
+    // fehlermeldung in der Console anzeigen
+      console.error("An error occured while fetching the data: ", error.message);
+    // alert to inform user
+      alert("An error occured while fetching the data");
+  } 
 }
 
 function displayPosts(data) {
