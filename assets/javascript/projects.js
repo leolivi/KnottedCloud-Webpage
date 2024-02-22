@@ -5,8 +5,8 @@ async function getData() {
   try {
     // get data from json file
       const response = await fetch('assets/api/projects-data.json');
-      // handle HTTP relatet issues (status code not in range 200-299)
-      if (!(response.status >= 200 && response.status < 300)) {
+      // handle HTTP related issues (status code not in range 200-299)
+      if (!response.ok) {
         throw new Error(`Error occurred in HTTP path. Status code: ${response.status}`);
       }
       const data = await response.json();
