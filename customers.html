@@ -31,7 +31,7 @@
     <header class="main-header costumers">
       <!-- Navigation -->
       <nav class="main-nav">
-        <a href="index.html"
+        <a href="homepage.html"
           ><img
             src="assets/illustrations/icons/logo/KC-brandmark-no-background.svg"
             alt="Logo Icon to get to Homepage"
@@ -42,7 +42,7 @@
         </button>
         <!-- Menu -->
         <ul class="main-nav-items">
-          <li><a href="index.html">home</a></li>
+          <li><a href="homepage.html">home</a></li>
           <li><a href="projects.html">projects</a></li>
           <li><a href="community.html">community</a></li>
           <li><a class="active" href="#">customers</a></li>
@@ -50,7 +50,7 @@
         </ul>
         <!-- Mobile Menu -->
         <ul class="menu">
-          <li><a class="nav-item" href="index.html">home</a></li>
+          <li><a class="nav-item" href="homepage.html">home</a></li>
           <li><a class="nav-item" href="projects.html">projects</a></li>
           <li><a class="nav-item" href="community.html">community</a></li>
           <li><a class="nav-item active" href="customers.html">customers</a></li>
@@ -216,7 +216,7 @@
         <ul>
           <!-- Logo / HP Button -->
           <li>
-            <a href="index.html"
+            <a href="homepage.html"
               ><img
                 src="assets/illustrations/icons/logo/KC-brandmark.svg"
                 alt="Get to Homepage"
@@ -278,4 +278,11 @@
       </button>
     </div>
   </body>
+  <script>
+    // Remove .html in url path
+    if (location.pathname.slice(-5) === '.html') {
+        var newURL = location.pathname.slice(0, -5);
+        history.replaceState({}, document.title, newURL);
+        }
+  </script>
 </html>

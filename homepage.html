@@ -148,6 +148,13 @@
     <div class="scroll-to-top-button">
         <button id="sttB" title="Go to top"><img class="light-mode" src="assets/illustrations/icons/button-scroll-to-top.svg" alt="Scroll to top"></button>
     </div>
+    <script>
+        // Remove .html in url path
+        if (location.pathname.slice(-5) === '.html') {
+        var newURL = location.pathname.slice(0, -5);
+        history.replaceState({}, document.title, newURL);
+        }
+      </script>
 </body>
 
 </html>
