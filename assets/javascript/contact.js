@@ -609,13 +609,15 @@ function validateForm(event) {
         }
     };
 
-    // send data to backend when no errors or displey if there are
+    // send data to backend when no errors or display if there are
     if (Object.keys(validationErrors). length > 0) {
         displayError(validationErrors);
     } else {
-        // console.log("Thank you for your message!");
+        // display success Message 
         const successMessage = document.getElementById("successMessage");
         successMessage.style.display = "block";
         console.log(successMessage);
+        // delete content in input fields
+        document.querySelector(".contact-form").reset();
     }
 };
