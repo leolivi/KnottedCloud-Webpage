@@ -263,25 +263,6 @@
   }
 
   .main-nav .main-nav-items {
-    /* width: 100%;
-    height: 100vh;
-    background-image: url(../illustrations/backgrounds/bg-navigation-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: 102%;
-    background-position: -1vw -35vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: right;
-    gap: 4rem;
-    position: absolute;
-    padding-top: 8rem;
-    top: 0;
-    right: -2000px; */
     display: none;
   }
 
@@ -292,9 +273,6 @@
   /* Burger Icon */
   .burger-icon {
     color: var(--KC-orange);
-    /* position: absolute;
-    right: 2.8rem;
-    top: 2rem; */
     display: block;
     cursor: pointer;
     background: none;
@@ -974,11 +952,6 @@
 }
 
 /* Dark Mode Media Query */
-/* @media (prefers-color-scheme: dark) {
-    .main-footer {
-        background: #242319c0;
-    }
-} */
 /* Add later... */
 
 /* Scroll to Top Button */

@@ -31,7 +31,7 @@ function displayPosts(data) {
         <img src="assets/images/${blogPost.image[1]}" srcset="assets/images/${blogPost.image[0]}" alt="handmade pink macrame wallhanging with raffia details">
         <div class="desc" style="background-color: transparent;">
             <h3 class="projects-h3" style="opacity: 0;">${blogPost.title}</h3>
-            <img class="info-icon" onclick="displayInfo(this)" onmouseleave="removeInfo(this)" src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture description">
+            <img class="info-icon" onclick="displayInfo(this)" onclick="removeInfo(this)" src="assets/illustrations/icons/icon-info-cloud-desktop.svg" alt="click here to see picture description">
         </div>
         <div class="desc-text" style="display: none;">${blogPost.body}</div>
         `;

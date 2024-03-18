@@ -64,7 +64,7 @@ function validateFirstName(event) {
         validationErrors.firstName = "Please enter your first name";
      } else {
         // variable for name Regex
-        const nameRegex = /^[A-Za-zÄäÖöÜüÉéÈèÔô\s]+$/;
+        const nameRegex = /^[A-Za-zÄäÖöÜüÉéÈèÔô\s-]+$/;
         // check if name is valid
         if (!nameRegex.test(data.firstName)) {
             validationErrors.firstName = "Please enter a valid first name";
@@ -119,7 +119,7 @@ function validateLastName(event) {
         validationErrors.lastName = "Please enter your last name";
      } else {
         // variable for name Regex
-        const nameRegex = /^[A-Za-zÄäÖöÜüÉéÈèÔô\s]+$/;
+        const nameRegex = /^[A-Za-zÄäÖöÜüÉéÈèÔô\s-]+$/;
         // check if name is valid
         if (!nameRegex.test(data.lastName)) {
             validationErrors.lastName = "Please enter a valid last name";
@@ -323,7 +323,7 @@ function validateEmail(event) {
         validationErrors.email = "Please enter your email";
      } else {
         // variable for email Regex
-        const emailRegex = /^[^\s@]+@[^\s@]+[^\s@]+$/;
+        const emailRegex = /^[^\s@]+@[^.\s]{2,}[\d]*(\.[^\s@]+)?$/
         // check if email address is valid
         if (!emailRegex.test(data.email)) {
             validationErrors.email = "Please enter a valid email address";
@@ -440,7 +440,7 @@ function validateForm(event) {
         validationErrors.firstName = "Please enter your first name";
      } else {
         // variable for name Regex
-        const nameRegex = /^[A-Za-zÄäÖöÜüÉéÈèÔô\s]+$/;
+        const nameRegex = /^[A-Za-zÄäÖöÜüÉéÈèÔô\s-]+$/;
         // check if name is valid
         if (!nameRegex.test(data.firstName)) {
             validationErrors.firstName = "Please enter a valid first name";
@@ -454,7 +454,7 @@ function validateForm(event) {
         validationErrors.lastName = "Please enter your last name";
      } else {
         // variable for name Regex
-        const nameRegex = /^[A-Za-zÄäÖöÜüÉéÈèÔô\s]+$/;
+        const nameRegex = /^[A-Za-zÄäÖöÜüÉéÈèÔô\s-]+$/;
         // check if name is valid
         if (!nameRegex.test(data.lastName)) {
             validationErrors.lastName = "Please enter a valid last name";
@@ -510,7 +510,8 @@ function validateForm(event) {
         validationErrors.email = "Please enter your email";
      } else {
         // variable for email Regex
-        const emailRegex = /^[^\s@]+@[^\s@]+[^\s@]+$/;
+        const emailRegex = /^[^\s@]+@[^.\s]{2,}[\d]*(\.[^\s@]+)?$/
+
         // check if email address is valid
         if (!emailRegex.test(data.email)) {
             validationErrors.email = "Please enter a valid email address";
