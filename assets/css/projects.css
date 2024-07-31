@@ -84,6 +84,11 @@
   box-shadow: none;
 }
 
+.fade-out {
+  transition: opacity 1s ease-out;
+  opacity: 0 !important;
+}
+
 /* Responsive Background */
 @media screen and (min-width: 1800px) {
   .main-header.projects {
@@ -342,8 +347,6 @@
 
 .projects-image-container > div {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  /* position: relative; */
 }
 
 .projects-image-container > .blog-post {

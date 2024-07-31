@@ -56,6 +56,23 @@ function displayInfo(icon) {
     backgroundBanner.style.backgroundColor === "transparent"
       ? "var(--KC-brownhover)"
       : "transparent";
+
+  // Add fade-out effect after 10 seconds
+  setTimeout(function() {
+    descriptionText.classList.add("fade-out");
+    blogpostTitle.classList.add("fade-out");
+    backgroundBanner.classList.add("fade-out");
+
+    setTimeout(function() {
+      descriptionText.style.display = "none";
+      blogpostTitle.style.opacity = "0";
+      backgroundBanner.style.backgroundColor = "transparent";
+
+      descriptionText.classList.remove("fade-out");
+      blogpostTitle.classList.remove("fade-out");
+      backgroundBanner.classList.remove("fade-out");
+    }, 1000);
+  }, 10000);
 }
 
 // remove description
